@@ -1,0 +1,1851 @@
+更新日期 | 更新内容 | 更新者姓名（%用作隔开符号）
+2023-04-22 %ipv4: Fix potential uninit variable access bug in __ip_make_skb()% Ziyang Xuan
+2023-04-07 %tcp: restrict net.ipv4.tcp_app_win% YueHaibing
+2023-03-23 %net: ipv4: Allow changing IPv4 address protocol% Petr Machata
+2023-03-17 %ipv4: raw: constify raw_v4_match() socket argument% Eric Dumazet
+2023-03-17 %ipv4: constify ip_mc_sf_allow() socket argument% Eric Dumazet
+2023-03-16 %ipv4: Fix incorrect table ID in IOCTL path% Ido Schimmel
+2023-02-13 %net: ipv4: Remove completion function scaffolding% Herbert Xu
+2023-02-13 %net: ipv4: Add scaffolding to change completion function signature% Herbert Xu
+2023-02-03 %ipv4: raw: add drop reasons% Eric Dumazet
+2023-02-01 %net: add support for ipv4 big tcp% Xin Long
+2023-02-01 %cipso_ipv4: use iph_set_totlen in skbuff_setattr% Xin Long
+2023-01-23 %ipv4: prevent potential spectre v1 gadget in fib_metrics_match()% Eric Dumazet
+2023-01-23 %ipv4: prevent potential spectre v1 gadget in ip_metrics_convert()% Eric Dumazet
+2022-12-06 %ipv4: Fix incorrect route flushing when table ID 0 is used% Ido Schimmel
+2022-12-06 %ipv4: Fix incorrect route flushing when source address is deleted% Ido Schimmel
+2022-11-28 %ipv4: Fix route deletion when nexthop info is not specified% Ido Schimmel
+2022-11-22 %ipv4: Fix error return code in fib_table_insert()% Ziyang Xuan
+2022-11-21 %ipv4/fib: Replace zero-length array with DECLARE_FLEX_ARRAY() helper% Kees Cook
+2022-11-16 %ipv4: tunnels: use DEV_STATS_INC()% Eric Dumazet
+2022-11-14 %ipasdv4/tcp_ipv4: remove redundant assignment% xu xin
+2022-10-12 %xfrm: fix "disable_policy" on ipv4 early demux% Eyal Birger
+2022-10-07 %ipv4: Handle attempt to delete multipath route when fib_info contains an nh r...% David Ahern
+2022-09-20 %tcp: Don't allocate tcp_death_row outside of struct netns_ipv4.% Kuniyuki Iwashima
+2022-08-22 %ipv4: move from strlcpy with unused retval to strscpy% Wolfram Sang
+2022-07-25 %ipv4: Fix data-races around sysctl_fib_notify_on_flag_change.% Kuniyuki Iwashima
+2022-07-20 %ipv4: Fix data-races around sysctl_fib_multipath_hash_fields.% Kuniyuki Iwashima
+2022-07-20 %ipv4: Fix data-races around sysctl_fib_multipath_hash_policy.% Kuniyuki Iwashima
+2022-07-20 %ipv4: Fix a data-race around sysctl_fib_multipath_use_neigh.% Kuniyuki Iwashima
+2022-07-19 %ipv4/udp: support externally provided ubufs% Pavel Begunkov
+2022-07-18 %ipv4: avoid partial copy for zc% Pavel Begunkov
+2022-07-15 %net: ipv4: new arp_accept option to accept garp only if in-network% Jaehee Park
+2022-07-13 %ipv4: Fix data-races around sysctl_ip_dynaddr.% Kuniyuki Iwashima
+2022-07-12 %net: ipv4: fix clang -Wformat warnings% Justin Stitt
+2022-07-08 %ipv4: Fix a data-race around sysctl_fib_sync_mem.% Kuniyuki Iwashima
+2022-06-17 %ipv4: ping: fix bind address validity check% Riccardo Paolo Bestetti
+2022-05-30 %net: ipv4: Avoid bounds check warning% huhai
+2022-05-06 %ipv4: drop dst in multicast routing path% Lokesh Dhoundiyal
+2022-04-30 %ipv4: remove unnecessary type castings% Yu Zhe
+2022-04-22 %ipv4: Initialise -&gt;flowi4_scope properly in ICMP handlers.% Guillaume Nault
+2022-04-22 %ipv4: Avoid using RTO_ONLINK with ip_route_connect().% Guillaume Nault
+2022-04-22 %ipv4: Don't reset -&gt;flowi4_scope in ip_rt_fix_tos().% Guillaume Nault
+2022-04-13 %net: ipv4: add skb drop reasons to ip_error()% Menglong Dong
+2022-04-11 %ipv4: Use dscp_t in struct fib_entry_notifier_info% Guillaume Nault
+2022-04-11 %ipv4: Use dscp_t in struct fib_rt_info% Guillaume Nault
+2022-04-01 %net: ipv4: fix route with nexthop object delete warning% Nikolay Aleksandrov
+2022-03-18 %ipv4: Fix route lookups when handling ICMP redirects and PMTU updates% Guillaume Nault
+2022-02-21 %ipv4: Invalidate neighbour for broadcast address upon address addition% Ido Schimmel
+2022-02-17 %ipv4: fix data races in fib_alias_hw_flags_set% Eric Dumazet
+2022-02-15 %ipv4: add description about martian source% Zhang Yunkai
+2022-02-11 %ipv4: add (struct uncached_list)-&gt;quarantine list% Eric Dumazet
+2022-02-10 %ipv4: Reject again rules with high DSCP values% Guillaume Nault
+2022-02-08 %ipv4: add fib_net_exit_batch()% Eric Dumazet
+2022-02-07 %ipv4: Use dscp_t in struct fib_alias% Guillaume Nault
+2022-02-07 %ipv4: Reject routes specifying ECN bits in rtm_tos% Guillaume Nault
+2022-02-07 %ipv4: Stop taking ECN bits into account in fib4-rules% Guillaume Nault
+2022-02-07 %net: ipv4: use kfree_skb_reason() in ip_protocol_deliver_rcu()% Menglong Dong
+2022-02-07 %net: ipv4: use kfree_skb_reason() in ip_rcv_finish_core()% Menglong Dong
+2022-02-07 %net: ipv4: use kfree_skb_reason() in ip_rcv_core()% Menglong Dong
+2022-01-31 %ipv4: Make ip_idents_reserve static% David Ahern
+2022-01-29 %ipv4: drop fragmentation code from ip_options_build()% Jakub Kicinski
+2022-01-27 %ipv4: tcp: send zero IPID in SYNACK messages% Eric Dumazet
+2022-01-27 %ipv4: raw: lock the socket in raw_bind()% Eric Dumazet
+2022-01-27 %ipv4: Namespaceify min_adv_mss sysctl knob% xu xin
+2022-01-26 %tcp: allocate tcp_death_row outside of struct netns_ipv4% Eric Dumazet
+2022-01-25 %ipv4/tcp: do not use per netns ctl sockets% Eric Dumazet
+2022-01-25 %ipv4: do not use per netns icmp sockets% Eric Dumazet
+2022-01-25 %ipv4: get rid of fib_info_hash_{alloc|free}% Eric Dumazet
+2022-01-24 %ipv4: fix ip option filtering for locally generated fragments% Jakub Kicinski
+2022-01-19 %ipv4: add net_hash_mix() dispersion to fib_info_laddrhash keys% Eric Dumazet
+2022-01-19 %ipv4: avoid quadratic behavior in netns dismantle% Eric Dumazet
+2022-01-16 %ipv4: update fib_info_cnt under spinlock protection% Eric Dumazet
+2021-12-31 %ipv4: Check attribute length for RTA_FLOW in multipath route% David Ahern
+2021-12-31 %ipv4: Check attribute length for RTA_GATEWAY in multipath route% David Ahern
+2021-12-23 %netfilter: flowtable: remove ipv4/ipv6 modules% Florian Westphal
+2021-12-06 %ipv4: add net device refcount tracker to struct in_device% Eric Dumazet
+2021-12-02 %ipv4: convert fib_num_tclassid_users to atomic_t% Eric Dumazet
+2021-11-20 %ipv4: Exposing __ip_sock_set_tos() in ip.h% Poorva Sonparote
+2021-11-17 %ipv4/raw: support binding to nonlocal addresses% Riccardo Paolo Bestetti
+2021-11-14 %ipv4: Remove duplicate assignments% luo penghao
+2021-11-14 %ipv4: drop unused assignment% luo penghao
+2021-10-25 %ipv4: guard IP_MINTTL with a static key% Eric Dumazet
+2021-10-25 %ipv4: annotate data races arount inet-&gt;min_ttl% Eric Dumazet
+2021-09-29 %net/ipv4/datagram.c: remove superfluous header files from datagram.c% Mianhan Liu
+2021-09-28 %net: ipv4: remove superfluous header files from fib_notifier.c% Mianhan Liu
+2021-09-27 %net/ipv4/tcp_nv.c: remove superfluous header files from tcp_nv.c% Mianhan Liu
+2021-09-24 %net: ipv4: Fix rtnexthop len when RTA_FLOW is present% Xiao Liang
+2021-09-23 %net/ipv4/xfrm4_tunnel.c: remove superfluous header files from xfrm4_tunnel.c% Mianhan Liu
+2021-09-21 %net/ipv4/sysctl_net_ipv4.c: remove superfluous header files from sysctl_net_i...% Mianhan Liu
+2021-09-21 %net/ipv4/syncookies.c: remove superfluous header files from syncookies.c% Mianhan Liu
+2021-09-21 %net/ipv4/udp_tunnel_core.c: remove superfluous header files from udp_tunnel_c...% Mianhan Liu
+2021-09-20 %net/ipv4/tcp_minisocks.c: remove superfluous header files from tcp_minisocks.c% Mianhan Liu
+2021-09-20 %net/ipv4/tcp_fastopen.c: remove superfluous header files from tcp_fastopen.c% Mianhan Liu
+2021-09-20 %net/ipv4/route.c: remove superfluous header files from route.c% Mianhan Liu
+2021-09-19 %NET: IPV4: fix error "do not initialise globals to 0"% wangzhitong
+2021-09-14 %Revert "Revert "ipv4: fix memory leaks in ip_cmsg_send() callers""% Eric Dumazet
+2021-09-13 %Revert "ipv4: fix memory leaks in ip_cmsg_send() callers"% Yajun Deng
+2021-09-02 %Set fc_nlinfo in nh_create_ipv4, nh_create_ipv6% Ryoga Saito
+2021-08-31 %ipv4: fix endianness issue in inet_rtm_getroute_build_skb()% Eric Dumazet
+2021-08-30 %net: ipv4: Fix the warning for dereference% Yajun Deng
+2021-08-30 %ipv4: make exception cache less predictible% Eric Dumazet
+2021-08-26 %ipv4: use siphash instead of Jenkins in fnhe_hashfun()% Eric Dumazet
+2021-08-24 %net: ipv4: Move ip_options_fragment() out of loop% Yajun Deng
+2021-08-05 %net/ipv4/igmp: Use struct_size() helper% Gustavo A. R. Silva
+2021-08-05 %net/ipv4/ipv6: Replace one-element arraya with flexible-array members% Gustavo A. R. Silva
+2021-08-05 %net/ipv4: Revert use of struct_size() helper% Gustavo A. R. Silva
+2021-08-03 %ipv4: use skb_expand_head in ip_finish_output2% Vasily Averin
+2021-08-02 %ipv4: Fix refcount warning for new fib_info% David Ahern
+2021-08-02 %net/ipv4: Replace one-element array with flexible-array member% Gustavo A. R. Silva
+2021-07-26 %ipv4: ip_output.c: Fix out-of-bounds warning in ip_copy_addrs()% Gustavo A. R. Silva
+2021-07-21 %net: ipv4: Consolidate ipv4_mtu and ip_dst_mtu_maybe_forward% Vadim Fedorenko
+2021-07-20 %net: ipv4: add capability check for net administration% Yang Yang
+2021-06-22 %net/ipv4: swap flow ports when validating source% Miao Wang
+2021-06-16 %net: ipv4: fix memory leak in ip_mc_add1_src% Chengyang Fan
+2021-06-15 %net: Introduce net.ipv4.tcp_migrate_req.% Kuniyuki Iwashima
+2021-06-14 %ipv4: Fix device used for dst_alloc with local routes% David Ahern
+2021-06-08 %net: ipv4: Remove unneed BUG() function% Zheng Yongjun
+2021-06-08 %net: ipv4: fix memory leak in netlbl_cipsov4_add_std% Nanyong Sun
+2021-06-07 %ipv4: Fix spelling mistakes% Zheng Yongjun
+2021-05-18 %ipv4: Add custom multipath hash policy% Ido Schimmel
+2021-05-18 %ipv4: Add a sysctl to control multipath hash fields% Ido Schimmel
+2021-05-18 %ipv4: Calculate multipath hash inside switch statement% Ido Schimmel
+2021-05-17 %ipv4: Fix fall-through warnings for Clang% Gustavo A. R. Silva
+2021-04-06 %netfilter: nf_defrag_ipv4: use net_generic infra% Florian Westphal
+2021-03-31 %ipv4: convert igmp_link_local_mcast_reports sysctl to u8% Eric Dumazet
+2021-03-31 %ipv4: convert fib_multipath_{use_neigh|hash_policy} sysctls to u8% Eric Dumazet
+2021-03-31 %ipv4: convert udp_l3mdev_accept sysctl to u8% Eric Dumazet
+2021-03-31 %ipv4: convert fib_notify_on_flag_change sysctl to u8% Eric Dumazet
+2021-03-31 %netfilter: nf_log_ipv4: rename to nf_log_syslog% Florian Westphal
+2021-03-28 %ipv4: tcp_lp.c: Couple of typo fixes% Bhaskar Chowdhury
+2021-03-28 %ipv4: ip_output.c: Couple of typo fixes% Bhaskar Chowdhury
+2021-03-25 %ipv4: convert ip_forward_update_priority sysctl to u8% Eric Dumazet
+2021-03-25 %ipv4: shrink netns_ipv4 with sysctl conversions% Eric Dumazet
+2021-03-25 %net: ipv4: Fix some typos% Lu Wei
+2021-03-16 %net: ipv4: route.c: simplify procfs code% Yejune Deng
+2021-03-12 %net: ipv4: route.c: Fix indentation of multi line comment.% Shubhankar Kuranagatti
+2021-03-10 %net: ipv4: route.c: fix space before tab% Shubhankar Kuranagatti
+2021-03-03 %vti: fix ipv4 pmtu check to honor ip header df% Eyal Birger
+2021-02-06 %Revert "net: ipv4: handle DSA enabled master network devices"% Vladimir Oltean
+2021-02-03 %net: indirect call helpers for ipv4/ipv6 dst_check functions% Brian Vazquez
+2021-02-02 %net: ipv4: Emit notification when fib hardware flags are changed% Amit Cohen
+2021-02-02 %net: ipv4: Publish fib_nlmsg_size()% Amit Cohen
+2021-02-02 %net: ipv4: Pass fib_rt_info as const to fib_dump_info()% Amit Cohen
+2021-02-01 %udp: ipv4: manipulate network header of NATed UDP GRO fraglist% Dongseok Yi
+2020-12-28 %ipv4: Ignore ECN bits for fib lookups in fib_compute_spec_dst()% Guillaume Nault
+2020-12-04 %ipv4: fix error return code in rtm_to_fib_config()% Zhang Changzhong
+2020-11-28 %ipv4: Fix tos mask in inet_rtm_getroute()% Guillaume Nault
+2020-11-17 %ipv4: use IS_ENABLED instead of ifdef% Florian Klink
+2020-11-11 %ipv4: Set nexthop flags in a more consistent way% Ido Schimmel
+2020-11-10 %net: ipv4: remove redundant initialization in inet_rtm_deladdr% Menglong Dong
+2020-11-09 %ipv4/ipv6: switch to dev_get_tstats64% Heiner Kallweit
+2020-11-07 %net: ipv4: convert tasklets to use new tasklet_setup() API% Allen Pais
+2020-10-30 %net: ipv4: Fix some kerneldoc warnings in TCP Low Priority% Andrew Lunn
+2020-10-14 %ipv4/icmp: l3mdev: Perform icmp error route lookup on source device routing t...% Mathieu Desnoyers
+2020-10-10 %ipv4: Restore flowi4_oif update before call to xfrm_lookup_route% David Ahern
+2020-10-06 %ipv4: use dev_sw_netstats_rx_add()% Fabian Frederick
+2020-09-15 %ipv4: Update exception handling for multipath routes via same device% David Ahern
+2020-09-14 %ipv4: Initialize flowi4_multipath_hash in data path% David Ahern
+2020-09-08 %cipso: fix 'audit_secid' kernel-doc warning in cipso_ipv4.c% Wang Hai
+2020-08-31 %net: ipv4: remove unused arg exact_dif in compute_score% Miaohe Lin
+2020-08-26 %ipv4: nexthop: Correctly update nexthop group when replacing a nexthop% Ido Schimmel
+2020-08-26 %ipv4: nexthop: Correctly update nexthop group when removing a nexthop% Ido Schimmel
+2020-08-26 %ipv4: nexthop: Remove unnecessary rtnl_dereference()% Ido Schimmel
+2020-08-26 %ipv4: nexthop: Use nla_put_be32() for NHA_GATEWAY% Ido Schimmel
+2020-08-26 %ipv4: nexthop: Reduce allocation size of 'struct nh_group'% Ido Schimmel
+2020-08-26 %ipv4: Silence suspicious RCU usage warning% Ido Schimmel
+2020-08-25 %net: clean up codestyle for net/ipv4% Miaohe Lin
+2020-08-25 %net: gain ipv4 mtu when mtu is not locked% Miaohe Lin
+2020-08-24 %net: ipv4: delete repeated words% Randy Dunlap
+2020-08-18 %net: ipv4: remove duplicate "the the" phrase in Kconfig text% Colin Ian King
+2020-08-12 %Revert "ipv4: tunnel: fix compilation on ARCH=um"% David S. Miller
+2020-08-12 %ipv4: tunnel: fix compilation on ARCH=um% Johannes Berg
+2020-08-04 %ipv4: route: Ignore output interface in FIB lookup for PMTU route% Stefano Brivio
+2020-07-29 %ipv4: Silence suspicious RCU usage warning% Ido Schimmel
+2020-07-24 %net/ipv4: switch do_ip_setsockopt to sockptr_t% Christoph Hellwig
+2020-07-24 %net/ipv4: merge ip_options_get and ip_options_get_from_user% Christoph Hellwig
+2020-07-24 %net/ipv4: switch ip_mroute_setsockopt to sockptr_t% Christoph Hellwig
+2020-07-19 %net/ipv4: remove compat_ip_{get,set}sockopt% Christoph Hellwig
+2020-07-19 %net/ipv4: factor out mcast join/leave setsockopt helpers% Christoph Hellwig
+2020-07-19 %net/ipv4: factor out MCAST_MSFILTER setsockopt helpers% Christoph Hellwig
+2020-07-19 %net/ipv4: factor out MCAST_MSFILTER getsockopt helpers% Christoph Hellwig
+2020-07-13 %net: ipv4: kerneldoc fixes% Andrew Lunn
+2020-07-07 %ipv4: fill fl4_icmp_{type,code} in ping_v4_sendmsg% Sabrina Dubroca
+2020-06-27 %net: ipv4: Fix wrong type conversion from hint to rt in ip_route_use_hint()% Miaohe Lin
+2020-06-01 %ipv4: nexthop: Fix deadcode issue by performing a proper NULL check% Patrick Eigensatz
+2020-05-28 %ipv4: add ip_sock_set_pktinfo% Christoph Hellwig
+2020-05-28 %ipv4: add ip_sock_set_mtu_discover% Christoph Hellwig
+2020-05-28 %ipv4: add ip_sock_set_recverr% Christoph Hellwig
+2020-05-28 %ipv4: add ip_sock_set_freebind% Christoph Hellwig
+2020-05-28 %ipv4: add ip_sock_set_tos% Christoph Hellwig
+2020-05-26 %ipv4: nexthop version of fib_info_nh_uses_dev% David Ahern
+2020-05-26 %ipv4: Refactor nhc evaluation in fib_table_lookup% David Ahern
+2020-05-25 %ipv4: potential underflow in compat_ip_setsockopt()% Dan Carpenter
+2020-05-20 %ipv4: take handling of group_source_req options into a helper% Al Viro
+2020-05-20 %ipv4: do compat setsockopt for MCAST_MSFILTER directly% Al Viro
+2020-05-19 %ipv4: consolidate the VIFF_TUNNEL handling in ipmr_new_tunnel% Christoph Hellwig
+2020-05-19 %ipv4: streamline ipmr_new_tunnel% Christoph Hellwig
+2020-05-18 %ipv4,appletalk: move SIOCADDRT and SIOCDELRT handling into -&gt;compat_ioctl% Christoph Hellwig
+2020-05-08 %net: ipv4: really enforce backoff for redirects% Paolo Abeni
+2020-05-06 %xfrm: avoid extract_output indirection for ipv4% Florian Westphal
+2020-04-28 %net: ipv4: add sysctl for nexthop api compatibility mode% Roopa Prabhu
+2020-04-22 %ipv4: Update fib_select_default to handle nexthop objects% David Ahern
+2020-04-20 %net: ipv4: remove redundant assignment to variable rc% Colin Ian King
+2020-04-09 %net: ipv4: devinet: Fix crash when add/del multicast IP with autojoin% Taras Chornyi
+2020-03-29 %ipv4: fix a RCU-list lock in fib_triestat_seq_show% Qian Cai
+2020-03-23 %ipv4: fix a RCU-list lock in inet_dump_fib()% Qian Cai
+2020-02-24 %tcp: ipv4: Pass lockdep expression to RCU lists% Amol Grover
+2020-02-22 %ipv4: ensure rcu_read_lock() in cipso_v4_error()% Matteo Croce
+2020-02-19 %net/ipv4/sysctl: show tcp_{allowed, available}_congestion_control in non-init...% Christian Brauner
+2020-01-21 %tcp/ipv4: remove AF_INET_FAMILY% Alex Shi
+2020-01-14 %ipv4: Add "offload" and "trap" indications to routes% Ido Schimmel
+2020-01-14 %ipv4: Encapsulate function arguments in a struct% Ido Schimmel
+2020-01-14 %ipv4: Replace route in list before notifying% Ido Schimmel
+2020-01-14 %net: ipv4: use skb_list_walk_safe helper for gso segments% Jason A. Donenfeld
+2020-01-10 %ipv4: Detect rollover in specific fib table dump% David Ahern
+2020-01-02 %ipv4/tcp: Pass dif and sdif to tcp_v4_inbound_md5_hash% David Ahern
+2020-01-02 %ipv4/tcp: Use local variable for tcp_md5_addr% David Ahern
+2019-12-16 %ipv4: Remove old route notifications and convert listeners% Ido Schimmel
+2019-12-16 %ipv4: Only Replay routes of interest to new listeners% Ido Schimmel
+2019-12-16 %ipv4: Handle route deletion notification during flush% Ido Schimmel
+2019-12-16 %ipv4: Handle route deletion notification% Ido Schimmel
+2019-12-16 %ipv4: Notify newly added route if should be offloaded% Ido Schimmel
+2019-12-16 %ipv4: Notify route if replacing currently offloaded one% Ido Schimmel
+2019-12-16 %ipv4: Extend FIB alias find function% Ido Schimmel
+2019-12-16 %ipv4: Notify route after insertion to the routing table% Ido Schimmel
+2019-11-21 %ipv4: use dst hint for ipv4 list receive% Paolo Abeni
+2019-11-21 %ipv4: move fib4_has_custom_rules() helper to public header% Paolo Abeni
+2019-11-18 %net/ipv4: fix sysctl max for fib_multipath_hash_policy% Marcelo Ricardo Leitner
+2019-11-07 %ipv4: Fix table id reference in fib_sync_down_addr% David Ahern
+2019-10-26 %ipv4: fix route update on metric change.% Paolo Abeni
+2019-10-21 %ipv4: fix IPSKB_FRAG_PMTU handling with fragmentation% Eric Dumazet
+2019-10-17 %ipv4: fix race condition between route lookup and invalidation% Wei Wang
+2019-10-17 %ipv4: Return -ENETUNREACH if we can't create route but saddr is valid% Stefano Brivio
+2019-10-04 %net: ipv4: avoid mixed n_redirects and rate_tokens usage% Paolo Abeni
+2019-09-20 %ipv4: Revert removal of rt_uses_gateway% David Ahern
+2019-08-24 %ipv4/icmp: fix rt dst dev null pointer dereference% Hangbin Liu
+2019-08-09 %ipv4: Add lockdep condition to fix for_each_entry()% Joel Fernandes (Google)
+2019-07-24 %net/ipv4: cleanup error condition testing% Pavel Machek
+2019-07-18 %udp: Fix typo in net/ipv4/udp.c% Su Yanjun
+2019-07-08 %ipv4: Multipath hashing on inner L3 needs to consider inner IPv6 pkts% Stephen Suryaputra
+2019-07-05 %ipv4: Fix NULL pointer dereference in ipv4_neigh_lookup()% Ido Schimmel
+2019-07-03 %ipv4: use indirect call wrappers for {tcp, udp}_{recv, send}msg()% Paolo Abeni
+2019-07-02 %ipv4: Fix off-by-one in route dump counter without netlink strict checking% Stefano Brivio
+2019-07-01 %ipv4: don't set IPv6 only flags to IPv4 addresses% Matteo Croce
+2019-06-28 %ipv4: enable route flushing in network namespaces% Christian Brauner
+2019-06-27 %net: ipv4: fix infinite loop on secondary addr promotion% Florian Westphal
+2019-06-26 %ipv4: reset rt_iif for recirculated mcast/bcast out pkts% Stephen Suryaputra
+2019-06-26 %ipv4: fix suspicious RCU usage in fib_dump_info_fnhe()% Eric Dumazet
+2019-06-25 %ipv4: Use return value of inet_iif() for __raw_v4_lookup in the while loop% Stephen Suryaputra
+2019-06-24 %ipv4: Dump route exceptions if requested% Stefano Brivio
+2019-06-24 %ipv4/route: Allow NULL flowinfo in rt_fill_info()% Stefano Brivio
+2019-06-24 %ipv4/fib_frontend: Allow RTM_F_CLONED flag to be used for filtering% Stefano Brivio
+2019-06-24 %ipv4: fix confirm_addr_indev() when enable route_localnet% Shijie Luo
+2019-06-24 %ipv4: fix inet_select_addr() when enable route_localnet% Shijie Luo
+2019-06-19 %net/ipv4: fib_trie: Avoid cryptic ternary expressions% Matthias Kaehlcke
+2019-06-17 %net: ipv4: remove erroneous advancement of list pointer% Florian Westphal
+2019-06-17 %net: ipv4: move tcp_fastopen server side code to SipHash library% Ard Biesheuvel
+2019-06-14 %ipv4: tcp: fix ACK/RST sent with a transmit delay% Eric Dumazet
+2019-06-14 %ipv4: Support multipath hashing on inner IP pkts for GRE tunnel% Stephen Suryaputra
+2019-06-10 %ipv4: Optimization for fib_info lookup with nexthops% David Ahern
+2019-06-10 %ipv4: Allow routes to use nexthop objects% David Ahern
+2019-06-09 %net: ipv4: fib_semantics: fix uninitialized variable% Enrico Weigelt
+2019-06-05 %ipv4: not do cache for local delivery if bc_forwarding is enabled% Xin Long
+2019-06-05 %net: ipv4: drop unneeded likely() call around IS_ERR()% Enrico Weigelt
+2019-06-04 %ipv4: Plumb support for nexthop object in a fib_info% David Ahern
+2019-06-04 %ipv4: Prepare for fib6_nh from a nexthop object% David Ahern
+2019-06-04 %ipv4: Use accessors for fib_info nexthop data% David Ahern
+2019-06-04 %net: ipv4: fix rcu lockdep splat due to wrong annotation% Florian Westphal
+2019-06-03 %ipv4: icmp: use this_cpu_read() in icmp_sk()% Eric Dumazet
+2019-06-02 %net: ipv4: provide __rcu annotation for ifa_list% Florian Westphal
+2019-05-31 %netfilter: ipv4: prefer skb_ensure_writable% Florian Westphal
+2019-05-30 %net: ipv4: place control buffer handling away from fragmentation iterators% Pablo Neira Ayuso
+2019-05-30 %net: ipv4: split skbuff into fragments transformer% Pablo Neira Ayuso
+2019-05-30 %net: ipv4: add skbuff fraglist splitter% Pablo Neira Ayuso
+2019-05-30 %tcp: add support for optional TFO backup key to net.ipv4.tcp_fastopen_key% Jason Baron
+2019-05-30 %ipv4: tcp_input: fix stack out of bounds when parsing TCP options.% Young Xiao
+2019-05-26 %ipv4: remove redundant assignment to n% Colin Ian King
+2019-05-26 %ipv4: no longer reference init_net in ip4_frags_ns_ctl_table[]% Eric Dumazet
+2019-05-22 %ipv4/igmp: fix build error if !CONFIG_IP_MULTICAST% Eric Dumazet
+2019-05-22 %ipv4/igmp: fix another memory leak in igmpv3_del_delrec()% Eric Dumazet
+2019-05-22 %ipv4: Rename and export nh_update_mtu% David Ahern
+2019-05-22 %ipv4: export fib_info_update_nh_saddr% David Ahern
+2019-05-22 %ipv4: export fib_flush% David Ahern
+2019-05-22 %ipv4: export fib_check_nh% David Ahern
+2019-05-22 %ipv4: Add function to send route updates% David Ahern
+2019-05-08 %ipv4: Fix raw socket lookup for local traffic% David Ahern
+2019-05-05 %ipv4: Move exception bucket to nh_common% David Ahern
+2019-05-05 %ipv4: Pass fib_nh_common to rt_cache_route% David Ahern
+2019-05-05 %ipv4: Move cached routes to fib_nh_common% David Ahern
+2019-05-01 %ipv4: ip_do_fragment: Preserve skb_iif during fragmentation% Shmulik Ladkani
+2019-04-24 %ipv4: add sanity checks in ipv4_link_failure()% Eric Dumazet
+2019-04-17 %ipv4: set the tcp_min_rtt_wlen range from 0 to one day% ZhangXiaoxu
+2019-04-14 %ipv4: ensure rcu_read_lock() in ipv4_link_failure()% Eric Dumazet
+2019-04-12 %ipv4: recompile ip options in ipv4_link_failure% Stephen Suryaputra
+2019-04-10 %ipv4: Handle RTA_GATEWAY set to 0% David Ahern
+2019-04-09 %net/ipv4/netfilter: Update comment from call_rcu_bh() to call_rcu()% Paul E. McKenney
+2019-04-08 %ipv4: Allow ipv6 gateway with ipv4 routes% David Ahern
+2019-04-08 %ipv4: Flag fib_info with a fib_nh using IPv6 gateway% David Ahern
+2019-04-08 %ipv4: Handle ipv6 gateway in fib_good_nh% David Ahern
+2019-04-08 %ipv4: Handle ipv6 gateway in fib_detect_death% David Ahern
+2019-04-08 %ipv4: Handle ipv6 gateway in ipv4_confirm_neigh% David Ahern
+2019-04-08 %ipv4: Add helpers for neigh lookup for nexthop% David Ahern
+2019-04-08 %ipv4: Add fib_check_nh_v6_gw% David Ahern
+2019-04-08 %ipv4: Refactor fib_check_nh% David Ahern
+2019-04-08 %ipv4: Add support to fib_config for IPv6 gateway% David Ahern
+2019-04-08 %ipv4: Add support to rtable for ipv6 gateway% David Ahern
+2019-04-08 %ipv4: Prepare fib_config for IPv6 gateway% David Ahern
+2019-04-08 %ipv4: Prepare rtable for IPv6 gateway% David Ahern
+2019-04-03 %ipv4: Change fib_nexthop_info and fib_add_nexthop to take fib_nh_common% David Ahern
+2019-04-03 %ipv4: Refactor nexthop attributes in fib_dump_info% David Ahern
+2019-04-03 %ipv4: Add fib_nh_common to fib_result% David Ahern
+2019-04-03 %ipv4: Update fib_table_lookup tracepoint to take common nexthop% David Ahern
+2019-03-29 %ipv4: Rename fib_nh entries% David Ahern
+2019-03-29 %ipv4: Create cleanup helper for fib_nh% David Ahern
+2019-03-29 %ipv4: Create init helper for fib_nh% David Ahern
+2019-03-29 %ipv4: Move IN_DEV_IGNORE_ROUTES_WITH_LINKDOWN to helper% David Ahern
+2019-03-29 %ipv4: Define fib_get_nhs when CONFIG_IP_ROUTE_MULTIPATH is disabled% David Ahern
+2019-03-21 %ipv4: Allow amount of dirty memory from fib resizing to be controllable% David Ahern
+2019-03-06 %ipv4/route: fail early when inet dev is missing% Paolo Abeni
+2019-03-02 %net: ipv4: Fix NULL pointer dereference in route lookup% Ido Schimmel
+2019-03-01 %ipv4: Add ICMPv6 support when parse route ipproto% Hangbin Liu
+2019-03-01 %netfilter: nf_tables: merge ipv4 and ipv6 nat chain types% Florian Westphal
+2019-02-27 %ipv4: Pass original device to ip_rcv_finish_core% David Ahern
+2019-02-27 %netfilter: nat: merge nf_nat_ipv4,6 into nat core% Florian Westphal
+2019-02-27 %netfilter: nat: merge ipv4 and ipv6 masquerade functionality% Florian Westphal
+2019-02-26 %ipv4: Return error for RTA_VIA attribute% David Ahern
+2019-02-24 %ipv4: icmp: use icmp_sk_exit()% Kefeng Wang
+2019-02-08 %net: ipv4: use a dedicated counter for icmp_v4 redirect packets% Lorenzo Bianconi
+2019-02-03 %ipv4/igmp: Don't drop IGMP pkt with zeros src addr% Edward Chron
+2019-02-01 %ipv4: fib: use struct_size() in kzalloc()% Gustavo A. R. Silva
+2019-01-28 %netfilter: ipv4: remove useless export_symbol% Florian Westphal
+2019-01-27 %net: ipv4: ip_input: fix blank line coding style issues% Yang Wei
+2019-01-19 %net: ipv4: ipmr: perform strict checks also for doit handlers% Jakub Kicinski
+2019-01-19 %net: ipv4: route: perform strict checks also for doit handlers% Jakub Kicinski
+2019-01-19 %net: ipv4: netconf: perform strict checks also for doit handlers% Jakub Kicinski
+2019-01-17 %net/ipv4/udp_tunnel: prefer SO_BINDTOIFINDEX over SO_BINDTODEVICE% David Herrmann
+2019-01-15 %net: ipv4: Fix memory leak in network namespace dismantle% Ido Schimmel
+2018-12-30 %ipv4: fib_rules: Fix possible infinite loop in fib_empty_table% YueHaibing
+2018-12-20 %net: ipv4: Set skb-&gt;dev for output route resolution% Ido Schimmel
+2018-12-15 %net: ipv4: do not handle duplicate fragments as overlapping% Michal Kubecek
+2018-12-10 %ipv4: Fix potential Spectre v1 vulnerability% Gustavo A. R. Silva
+2018-12-05 %ipv4: ipv6: netfilter: Adjust the frag mem limit when truesize changes% Jiri Wiesner
+2018-11-27 %net/ipv4: Fix missing raw_init when CONFIG_PROC_FS is disabled% David Ahern
+2018-11-20 %ipv4: Don't try to print ASCII of link level header in martian dumps.% David S. Miller
+2018-11-08 %ipv4/tunnel: use __vlan_hwaccel helpers% Michał Mirosław
+2018-10-29 %ipv4/igmp: fix v1/v2 switchback timeout based on rfc3376, 8.12% Hangbin Liu
+2018-10-25 %net/{ipv4,ipv6}: Do not put target net if input nsid is invalid% Bjørn Mork
+2018-10-24 %net/ipv4: Put target net when address dump fails due to bad attributes% David Ahern
+2018-10-22 %net/ipv4: Add support for dumping addresses for a specific device% David Ahern
+2018-10-22 %net/ipv4: Move loop over addresses on a device into in_dev_dump_addr% David Ahern
+2018-10-16 %net/ipv4: Bail early if user only wants prefix entries% David Ahern
+2018-10-16 %net: Plumb support for filtering ipv4 and ipv6 multicast route dumps% David Ahern
+2018-10-16 %net/ipv4: Plumb support for filtering route dumps% David Ahern
+2018-10-10 %net: ipv4: don't let PMTU updates increase route MTU% Sabrina Dubroca
+2018-10-10 %net: ipv4: update fnhe_pmtu when first hop's MTU changes% Sabrina Dubroca
+2018-10-08 %net/ipv4: Update inet_dump_ifaddr for strict data checking% David Ahern
+2018-10-02 %ipv4: fix use-after-free in ip_cmsg_recv_dstaddr()% Eric Dumazet
+2018-10-02 %ipv4: Allow sending multicast packets on specific i/f using VRF socket% Robert Shearman
+2018-09-26 %net-tcp: /proc/sys/net/ipv4/tcp_probe_interval is a u32 not int% Maciej Żenczykowski
+2018-09-26 %net-ipv4: remove 2 always zero parameters from ipv4_redirect()% Maciej Żenczykowski
+2018-09-26 %net-ipv4: remove 2 always zero parameters from ipv4_update_pmtu()% Maciej Żenczykowski
+2018-09-21 %net/ipv4: avoid compile error in fib_info_nh_uses_dev% Eric Dumazet
+2018-09-21 %ipv4: remove redundant null pointer check before kfree_skb% zhong jiang
+2018-09-20 %net/ipv4: Move device validation to helper% David Ahern
+2018-09-17 %net/ipv4: defensive cipso option parsing% Stefan Nuernberger
+2018-09-17 %netfilter: nf_nat_ipv4: remove obsolete EXPORT_SYMBOL% Florian Westphal
+2018-09-05 %ipv4: add inet_fill_args% Christian Brauner
+2018-09-05 %ipv4: enable IFA_TARGET_NETNSID for RTM_GETADDR% Christian Brauner
+2018-08-31 %net/ipv4: Add extack message that dev is required for ONLINK% David Ahern
+2018-08-22 %ipv4: tcp: send zero IPID for RST and ACK sent in SYN-RECV and TIME-WAIT state% Eric Dumazet
+2018-08-06 %ipv4: frags: precedence bug in ip_expire()% Dan Carpenter
+2018-08-01 %net: ipv4: Notify about changes to ip_forward_update_priority% Petr Machata
+2018-08-01 %net: ipv4: Control SKB reprioritization after forwarding% Petr Machata
+2018-07-31 %ipv4: frags: handle possible skb truesize change% Eric Dumazet
+2018-07-28 %ipv4: remove BUG_ON() from fib_compute_spec_dst% Lorenzo Bianconi
+2018-07-16 %ipv4/igmp: init group mode as INCLUDE when join source group% Hangbin Liu
+2018-07-16 %netfilter: utils: move nf_ip_checksum* from ipv4 to utils% Florian Westphal
+2018-07-12 %net: ipv4: fix listify ip_rcv_finish in case of forwarding% Jesper Dangaard Brouer
+2018-07-08 %net/ipv4: Set oif in fib_compute_spec_dst% David Ahern
+2018-07-07 %ipv4: ipcm_cookie initializers% Willem de Bruijn
+2018-07-06 %ipv4: Return EINVAL when ping_group_range sysctl doesn't map to user ns% Tyler Hicks
+2018-07-06 %net: ipv4: fix list processing on L3 slave devices% Edward Cree
+2018-07-05 %net: ipv4: fix drop handling in ip_list_rcv() and ip_list_rcv_finish()% Edward Cree
+2018-07-04 %net: ipv4: Hook into time based transmission% Jesus Sanchez-Palencia
+2018-07-04 %net: ipv4: listify ip_rcv_finish% Edward Cree
+2018-07-04 %net: ipv4: listified version of ip_rcv% Edward Cree
+2018-07-04 %ipv4: add __ip_queue_xmit() that supports tos param% Xin Long
+2018-05-29 %net/ipv4: Add support for specifying metric of connected routes% David Ahern
+2018-05-29 %netfilter: nat: merge ipv4/ipv6 masquerade code into main nat module% Florian Westphal
+2018-05-24 %net/ipv4: Remove tracepoint in fib_validate_source% David Ahern
+2018-05-24 %net/ipv4: Udate fib_table_lookup tracepoint% David Ahern
+2018-05-24 %ipv4: remove warning in ip_recv_error% Willem de Bruijn
+2018-05-23 %ipv4: support sport, dport and ip_proto in RTM_GETROUTE% Roopa Prabhu
+2018-05-23 %net: ipv4: add missing RTA_TABLE to rtm_ipv4_policy% Roopa Prabhu
+2018-05-22 %net/ipv4: Add helper to return path MTU based on fib result% David Ahern
+2018-05-17 %net/ipv4: Initialize proto and ports in flow struct% David Ahern
+2018-05-13 %net: ipv4: ipconfig: fix unused variable% Anders Roxell
+2018-05-11 %ipv4: fix memory leaks in udp_sendmsg, ping_v4_sendmsg% Andrey Ignatov
+2018-05-10 %net: ipv4: remove define INET_CSK_DEBUG and unnecessary EXPORT_SYMBOL% Joe Perches
+2018-05-10 %ipv4: reset fnhe_mtu_locked after cache route flushed% Hangbin Liu
+2018-05-10 %net/ipv4: Update ip_tunnel_metadata_cnt static key to modern api% Davidlohr Bueso
+2018-05-02 %ipv4: fix fnhe usage by non-cached routes% Julian Anastasov
+2018-04-24 %netfilter: nf_flow_table: move ipv4 offload hook code to nf_flow_table% Felix Fietkau
+2018-04-07 %ipv4: fix uninit-value in ip_route_output_key_hash_rcu()% Eric Dumazet
+2018-04-01 %ipv4: factorize sk_wmem_alloc updates done by __ip_append_data()% Eric Dumazet
+2018-03-29 %net/ipv4: Allow notifier to fail route replace% David Ahern
+2018-03-29 %net/ipv4: Move call_fib_entry_notifiers up for new routes% David Ahern
+2018-03-25 %net/ipv4: disable SMC TCP option with SYN Cookies% Hans Wippel
+2018-03-22 %net: Revert "ipv4: fix a deadlock in ip_ra_control"% Kirill Tkhai
+2018-03-22 %net: Revert "ipv4: get rid of ip_ra_lock"% Kirill Tkhai
+2018-03-14 %ipv4: lock mtu in fnhe when received PMTU &lt; net.ipv4.route.min_pmtu% Sabrina Dubroca
+2018-03-08 %net: Convert ipv4_net_ops% Kirill Tkhai
+2018-03-04 %net/ipv4: Simplify fib_multipath_hash with optional flow keys% David Ahern
+2018-03-04 %net/ipv4: Pass net to fib_multipath_hash instead of fib_info% David Ahern
+2018-03-01 %net: ipv4: avoid unused variable warning for sysctl% Arnd Bergmann
+2018-02-28 %ipv4: fib_rules: support match on sport, dport and ip proto% Roopa Prabhu
+2018-02-27 %net: ipv4: don't allow setting net.ipv4.route.min_pmtu below 68% Sabrina Dubroca
+2018-02-22 %net: ipv4: Set addr_type in hash_keys for forwarded case% David Ahern
+2018-02-15 %net/ipv4: Remove fib table id from rtable% David Ahern
+2018-02-14 %net: Move ipv4 set_lwt_redirect helper to lwtunnel% David Ahern
+2018-02-13 %net/ipv4: Unexport fib_multipath_hash and fib_select_path% David Ahern
+2018-02-13 %net/ipv4: Simplify fib_select_path% David Ahern
+2018-02-13 %net: Convert ipv4_sysctl_ops% Kirill Tkhai
+2018-01-29 %ipv4: Get the address of interface correctly.% Tonghao Zhang
+2018-01-25 %net/ipv4: Allow send to local broadcast from a socket bound to a VRF% David Ahern
+2018-01-15 %ipv4: Make neigh lookup keys for loopback/point-to-point devices be INADDR_ANY% Jim Westfall
+2018-01-15 %net: ipv4: Make "ip route get" match iif lo rules again.% Lorenzo Colitti
+2018-01-09 %net: ipv4: emulate READ_ONCE() on -&gt;hdrincl bit-field in raw_sendmsg()% Nicolai Stange
+2017-12-20 %ipv4: Fix use-after-free when flushing FIB tables% Ido Schimmel
+2017-12-19 %ipv4: fib: Fix metrics match when deleting a route% Phil Sutter
+2017-12-13 %ipv4: igmp: guard against silly MTU values% Eric Dumazet
+2017-12-11 %net: ipv4: fix for a race condition in raw_sendmsg% Mohamed Ghannam
+2017-11-03 %ipv4: Send a netevent whenever multipath hash policy is changed% Ido Schimmel
+2017-11-01 %ipv4: fix validate_source for VRF setup% Paolo Abeni
+2017-11-01 %netfilter: nf_reject_ipv4: Fix use-after-free in send_reset% Tejaswi Tanikella
+2017-10-25 %locking/atomics, net/ipv4/tcp_input.c: Convert ACCESS_ONCE() to READ_ONCE()/W...% Mark Rutland
+2017-10-24 %ipv4: tcp_minisocks: use BUG_ON instead of if condition followed by BUG% Gustavo A. R. Silva
+2017-10-24 %ipv4: icmp: use BUG_ON instead of if condition followed by BUG% Gustavo A. R. Silva
+2017-10-21 %ipv4: ipv4_default_advmss() should use route mtu% Eric Dumazet
+2017-10-20 %net: ipv4: Change fib notifiers to take a fib_alias% David Ahern
+2017-10-18 %ipv4: mark expected switch fall-throughs% Gustavo A. R. Silva
+2017-10-18 %ipv4: timewait: Convert timers to use timer_setup()% Kees Cook
+2017-10-09 %ipv4: Fix traffic triggered IPsec connections.% Steffen Klassert
+2017-10-09 %netfilter: SYNPROXY: skip non-tcp packet in {ipv4, ipv6}_synproxy_hook% Lin Zhang
+2017-10-05 %net/ipv4: Remove unused variable in route.c% Tim Hansen
+2017-10-03 %ipv4: ipmr: Don't forward packets already forwarded by hardware% Yotam Gigi
+2017-10-03 %ipv4: ipmr: Add the parent ID field to VIF struct% Yotam Gigi
+2017-10-01 %ipv4: Namespaceify tcp_fastopen_blackhole_timeout knob% Haishuang Yan
+2017-10-01 %ipv4: Namespaceify tcp_fastopen_key knob% Haishuang Yan
+2017-10-01 %ipv4: Remove the 'publish' logic in tcp_fastopen_init_key_once% Haishuang Yan
+2017-10-01 %ipv4: Namespaceify tcp_fastopen knob% Haishuang Yan
+2017-09-29 %net: ipv4: remove fib_info arg to fib_check_nh% David Ahern
+2017-09-29 %net: ipv4: remove fib_weight% David Ahern
+2017-09-19 %ipv4: speedup ipv6 tunnels dismantle% Eric Dumazet
+2017-09-15 %net: ipv4: fix l3slave check for index returned in IP_PKTINFO% David Ahern
+2017-08-28 %Revert "ipv4: make net_protocol const"% David Ahern
+2017-08-28 %ipv4: make net_protocol const% Bhumika Goyal
+2017-08-23 %ipv4: do metrics match when looking up and deleting a route% Xin Long
+2017-08-18 %ipv4: convert dst_metrics.refcnt from atomic_t to refcount_t% Eric Dumazet
+2017-08-16 %ipv4: better IP_MAX_MTU enforcement% Eric Dumazet
+2017-08-15 %ipv4: route: set ipv4 RTM_GETROUTE to not use rtnl% Florian Westphal
+2017-08-15 %ipv4: fix NULL dereference in free_fib_info_rcu()% Eric Dumazet
+2017-08-14 %ipv4: route: fix inet_rtm_getroute induced crash% Florian Westphal
+2017-08-13 %net: ipv4: add check for l3slave for index returned in IP_PKTINFO% David Ahern
+2017-08-13 %net: ipv4: remove unnecessary check on orig_oif% David Ahern
+2017-08-11 %net: ipv4: set orig_oif based on fib result for local traffic% David Ahern
+2017-08-07 %net: ipv4: add second dif to multicast source filter% David Ahern
+2017-08-07 %net: ipv4: add second dif to raw socket lookups% David Ahern
+2017-08-07 %net: ipv4: add second dif to inet socket lookups% David Ahern
+2017-08-07 %net: ipv4: add second dif to udp socket lookups% David Ahern
+2017-08-06 %Revert "ipv4: keep skb-&gt;dst around in presence of IP options"% Paolo Abeni
+2017-08-03 %ipv4: Introduce ipip_offload_init helper function.% Tonghao Zhang
+2017-08-02 %ipv4: fib: Set offload indication according to nexthop flags% Ido Schimmel
+2017-07-31 %ipv4: fib: Fix NULL pointer deref during fib_sync_down_dev()% Ido Schimmel
+2017-07-20 %ipv4: initialize fib_trie prior to register_netdev_notifier call.% Mahesh Bandewar
+2017-07-18 %ipv4: ipv6: initialize treq-&gt;txhash in cookie_v[46]_check()% Alexander Potapenko
+2017-07-15 %ipv4: ip_do_fragment: fix headroom tests% Vasily Averin
+2017-07-04 %ipv4: Export rtm_ipv4_policy.% David S. Miller
+2017-07-04 %net, ipv4: convert fib_info.fib_clntref from atomic_t to refcount_t% Reshetova, Elena
+2017-07-04 %net, ipv4: convert cipso_v4_doi.refcount from atomic_t to refcount_t% Reshetova, Elena
+2017-06-17 %ipv4: mark DST_NOGC and remove the operation of dst_free()% Wei Wang
+2017-06-17 %ipv4: call dst_hold_safe() properly% Wei Wang
+2017-06-17 %ipv4: call dst_dev_put() properly% Wei Wang
+2017-06-17 %ipv4: take dst-&gt;__refcnt when caching dst in fib% Wei Wang
+2017-06-01 %ipv4: route: restore skb_dst_set in inet_rtm_getroute% Roopa Prabhu
+2017-05-30 %net: ipv4: Add extack message for invalid prefix or length% David Ahern
+2017-05-30 %net: ipv4: refactor key and length checks% David Ahern
+2017-05-26 %ipv4: add reference counting to metrics% Eric Dumazet
+2017-05-26 %net: ipv4: RTM_GETROUTE: return matched fib result when requested% Roopa Prabhu
+2017-05-26 %net: ipv4: Save trie prefix to fib lookup result% David Ahern
+2017-05-26 %net: ipv4: Convert inet_rtm_getroute to rcu versions of route lookup% David Ahern
+2017-05-26 %net: ipv4: Remove event arg to rt_fill_info% David Ahern
+2017-05-26 %net: ipv4: refactor ip_route_input_noref% David Ahern
+2017-05-26 %net: ipv4: refactor __ip_route_output_key_hash% David Ahern
+2017-05-22 %net: ipv4: tcp: fixed comment coding style issue% Rohit Chavan
+2017-05-22 %net: ipv4: Add extack messages for route add failures% David Ahern
+2017-05-22 %net: ipv4: Plumb extack through route add functions% David Ahern
+2017-05-08 %Revert "ipv4: restore rt-&gt;fi for reference counting"% David S. Miller
+2017-05-08 %ipv4: restore rt-&gt;fi for reference counting% WANG Cong
+2017-05-04 %ipv4, ipv6: ensure raw socket message is big enough to hold an IP header% Alexander Potapenko
+2017-04-30 %ipv4: get rid of ip_ra_lock% WANG Cong
+2017-04-28 %ipv4: Don't pass IP fragments to upper layer GRO handlers.% Steffen Klassert
+2017-04-24 %ipv4: Avoid caching l3mdev dst on mismatched local route% Robert Shearman
+2017-04-17 %ipv4: fix a deadlock in ip_ra_control% WANG Cong
+2017-04-13 %net: ipv4: Refine the ipv4_default_advmss% Gao Feng
+2017-04-07 %net: ipv4: fix multipath RTM_GETROUTE behavior when iif is given% Florian Larysch
+2017-04-06 %net: ipv4: fix multipath RTM_GETROUTE behavior when iif is given% Florian Larysch
+2017-03-22 %ipv4: provide stronger user input validation in nl_fib_input()% Eric Dumazet
+2017-03-21 %net: ipv4: add support for ECMP hash policy choice% Nikolay Aleksandrov
+2017-03-16 %ipv4: fib_rules: Dump FIB rules when registering FIB notifier% Ido Schimmel
+2017-03-16 %ipv4: fib_rules: Add notifier info to FIB rules notifications% Ido Schimmel
+2017-03-16 %ipv4: fib_rules: Check if rule is a default rule% Ido Schimmel
+2017-03-10 %ipv4: fib: Remove redundant argument% Ido Schimmel
+2017-03-10 %ipv4: fib: Move FIB notification code to a separate file% Ido Schimmel
+2017-02-26 %ipv4: mask tos for input route% Julian Anastasov
+2017-02-26 %ipv4: add missing initialization for flowi4_uid% Julian Anastasov
+2017-02-10 %ipv4: fib: Add events for FIB replace and append% Ido Schimmel
+2017-02-10 %ipv4: fib: Send notification before deleting FIB alias% Ido Schimmel
+2017-02-10 %ipv4: fib: Send deletion notification with actual FIB alias type% Ido Schimmel
+2017-02-10 %ipv4: fib: Only flush FIB aliases belonging to currently flushed table% Ido Schimmel
+2017-02-08 %ipv4: fib: Notify about nexthop status changes% Ido Schimmel
+2017-02-04 %ipv4: keep skb-&gt;dst around in presence of IP options% Eric Dumazet
+2017-02-02 %net: ipv4: remove fib_lookup.h from devinet.c include list% David Ahern
+2017-01-18 %inet: collapse ipv4/v6 rcv_saddr_equal functions into one% Josef Bacik
+2017-01-12 %net: ipv4: fix table id in getroute response% David Ahern
+2017-01-11 %net: ipv4: Fix multipath selection with vrf% David Ahern
+2017-01-09 %ipv4: make tcp_notsent_lowat sysctl knob behave as true unsigned int% Pavel Tikhomirov
+2017-01-09 %net: ipv4: remove disable of bottom half in inet_rtm_getroute% David Ahern
+2017-01-08 %net: ipv4: Remove flow arg from ip_mkroute_input% David Ahern
+2017-01-06 %net: ipv4: make fib_select_default static% David Ahern
+2017-01-06 %net: ipv4: Simplify rt_fill_info% David Ahern
+2017-01-03 %ipv4: Do not allow MAIN to be alias for new LOCAL w/ custom rules% Alexander Duyck
+2016-12-29 %net: ipv4: dst for local input routes should use l3mdev if relevant% David Ahern
+2016-12-29 %ipv4: Namespaceify tcp_max_syn_backlog knob% Haishuang Yan
+2016-12-29 %ipv4: Namespaceify tcp_tw_recycle and tcp_max_tw_buckets knob% Haishuang Yan
+2016-12-27 %ipv4: Namespaceify tcp_tw_reuse knob% Haishuang Yan
+2016-12-22 %net: ipv4: Don't crash if passing a null sk to ip_do_redirect.% Lorenzo Colitti
+2016-12-20 %ipv4: Should use consistent conditional judgement for ip fragment in __ip_app...% zheng li
+2016-12-07 %netfilter: rpfilter: bypass ipv4 lbcast packets with zeronet source% Liping Zhang
+2016-12-06 %netfilter: nft_fib_ipv4: initialize *dest to zero% Liping Zhang
+2016-12-05 %ipv4: Drop suffix update from resize code% Alexander Duyck
+2016-12-05 %ipv4: Drop leaf from suffix pull/push functions% Alexander Duyck
+2016-12-03 %ipv4: fib: Replay events when registering FIB notifier% Ido Schimmel
+2016-12-03 %ipv4: fib: Allow for consistent FIB dumping% Ido Schimmel
+2016-12-03 %ipv4: fib: Convert FIB notification chain to be atomic% Ido Schimmel
+2016-12-03 %ipv4: fib: Export free_fib_info()% Ido Schimmel
+2016-12-02 %ipv4: Set skb-&gt;protocol properly for local output% Eli Cooper
+2016-11-30 %net: ipv4: Don't crash if passing a null sk to ip_rt_update_pmtu.% Lorenzo Colitti
+2016-11-25 %net: ipv4, ipv6: run cgroup eBPF egress programs% Daniel Mack
+2016-11-16 %ipv4: Fix memory leak in exception case for splitting tries% Alexander Duyck
+2016-11-16 %ipv4: Restore fib_trie_flush_external function and fix call ordering% Alexander Duyck
+2016-11-13 %ipv4: use new_gw for redirect neigh lookup% Stephen Suryaputra Lin
+2016-11-10 %ipv4: update comment to document GSO fragmentation cases.% Lance Richardson
+2016-11-03 %ipv4: allow local fragmentation in ip_finish_output_gso()% Lance Richardson
+2016-11-03 %ipv4: add IP_RECVFRAGSIZE cmsg% Willem de Bruijn
+2016-11-01 %net: Enable support for VRF with ipv4 multicast% David Ahern
+2016-10-22 %ipv4: use the right lock for ping_group_range% WANG Cong
+2016-10-20 %ipv4/6: use core net MTU range checking% Jarod Wilson
+2016-10-20 %ipv4: disable BH in set_ping_group_range()% Eric Dumazet
+2016-10-18 %ipv4: Remove unused but set variable% Tobias Klauser
+2016-10-13 %net: ipv4: Do not drop to make_route if oif is l3mdev% David Ahern
+2016-09-10 %net: ipv4: Remove l3mdev_get_saddr% David Ahern
+2016-09-10 %ipv4: use IS_ENABLED() instead of checking for built-in or module% Javier Martinez Canillas
+2016-09-09 %ipv4: fix value of -&gt;nlmsg_flags reported in RTM_NEWROUTE events% Guillaume Nault
+2016-09-08 %ipv4: accept u8 in IP_TOS ancillary data% Eric Dumazet
+2016-08-19 %net: ipv4: fix sparse error in fib_good_nh()% Eric Dumazet
+2016-08-06 %ipv4: panic in leaf_walk_rcu due to stale node pointer% David Forster
+2016-07-19 %net/ipv4: Introduce IPSKB_FRAG_SEGS bit to inet_skb_parm.flags% Shmulik Ladkani
+2016-07-11 %ipv4: af_inet: make it explicitly non-modular% Paul Gortmaker
+2016-07-11 %ipv4: reject RTNH_F_DEAD and RTNH_F_LINKDOWN from user space% Julian Anastasov
+2016-07-09 %ipv4: do not abuse GFP_ATOMIC in inet_netconf_notify_devconf()% Eric Dumazet
+2016-07-07 %timers, net/ipv4/inet: Initialize connection request timers as pinned% Thomas Gleixner
+2016-06-30 %ipv4: Fix ip_skb_dst_mtu to use the sk passed by ip_finish_output% Shmulik Ladkani
+2016-06-24 %netfilter: nf_reject_ipv4: don't send tcp RST if the packet is non-TCP% Liping Zhang
+2016-06-15 %net: ipv4: Add ability to have GRE ignore DF bit in IPv4 payloads% Philip Prindeville
+2016-06-14 %ipv4: fix checksum annotation in udp4_csum_init% Hannes Frederic Sowa
+2016-05-23 %ipv4: Fix non-initialized TTL when CONFIG_SYSCTL=n% Ezequiel Garcia
+2016-05-06 %ipv4: tcp: ip_send_unicast_reply() is not BH safe% Eric Dumazet
+2016-04-24 %ipv4/fib: don't warn when primary address is missing if in_dev is dead% Paolo Abeni
+2016-04-11 %net: ipv4: Consider failed nexthops in multipath routes% David Ahern
+2016-04-04 %ipv4: tcp: set SOCK_USE_WRITE_QUEUE for ip_send_unicast_reply()% Eric Dumazet
+2016-04-04 %ipv4: process socket-level control messages in IPv4% Soheil Hassas Yeganeh
+2016-04-02 %netlink: use nla_get_in_addr and nla_put_in_addr for ipv4 address% Haishuang Yan
+2016-03-28 %netfilter: ipv4: fix NULL dereference% Liping Zhang
+2016-03-22 %ipv4: initialize flowi4_flags before calling fib_lookup()% Lance Richardson
+2016-03-22 %ipv4: fix broadcast packets reception% Paolo Abeni
+2016-03-21 %net: ipv4: Fix truncated timestamp returned by inet_current_timestamp()% Deepa Dinamani
+2016-03-13 %ipv4: Don't do expensive useless work during inetdev destroy.% David S. Miller
+2016-03-02 %net/ipv4: remove left over dead code% Eric Engestrom
+2016-03-02 %netfilter: nf_defrag_ipv4: Drop redundant ip_send_check()% Joe Stringer
+2016-03-01 %net: ipv4: tcp_probe: Replace timespec with timespec64% Deepa Dinamani
+2016-03-01 %net: ipv4: Convert IP network timestamps to be y2038 safe% Deepa Dinamani
+2016-02-24 %ipv4: only create late gso-skb if skb is already set up with CHECKSUM_PARTIAL% Hannes Frederic Sowa
+2016-02-17 %ipv4: Remove inet_lro library% Ben Hutchings
+2016-02-16 %ipv4: namespacify ip fragment max dist sysctl knob% Nikolay Borisov
+2016-02-16 %ipv4: namespacify ip_early_demux sysctl knob% Nikolay Borisov
+2016-02-16 %ipv4: Namespacify ip_dynaddr sysctl knob% Nikolay Borisov
+2016-02-16 %ipv4: Namespaceify ip_default_ttl sysctl knob% Nikolay Borisov
+2016-02-16 %net/ipv4: add dst cache support for gre lwtunnels% Paolo Abeni
+2016-02-13 %ipv4: fix memory leaks in ip_cmsg_send() callers% Eric Dumazet
+2016-02-11 %ipv4: add option to drop gratuitous ARP packets% Johannes Berg
+2016-02-11 %ipv4: add option to drop unicast encapsulated in L2 multicast% Johannes Berg
+2016-02-07 %ipv4: Namespaceify tcp_notsent_lowat sysctl knob% Nikolay Borisov
+2016-02-07 %ipv4: Namespaceify tcp_fin_timeout sysctl knob% Nikolay Borisov
+2016-02-07 %ipv4: Namespaceify tcp_orphan_retries sysctl knob% Nikolay Borisov
+2016-02-07 %ipv4: Namespaceify tcp_retries2 sysctl knob% Nikolay Borisov
+2016-02-07 %ipv4: Namespaceify tcp_retries1 sysctl knob% Nikolay Borisov
+2016-02-07 %ipv4: Namespaceify tcp reordering sysctl knob% Nikolay Borisov
+2016-02-07 %ipv4: Namespaceify tcp syncookies sysctl knob% Nikolay Borisov
+2016-02-07 %ipv4: Namespaceify tcp synack retries sysctl knob% Nikolay Borisov
+2016-02-07 %ipv4: Namespaceify tcp syn retries sysctl knob% Nikolay Borisov
+2016-01-29 %ipv4: ipconfig: avoid unused ic_proto_used symbol% Arnd Bergmann
+2016-01-29 %ipv4: early demux should be aware of fragments% Eric Dumazet
+2016-01-25 %ipv4+ipv6: Make INET*_ESP select CRYPTO_ECHAINIV% Thomas Egerer
+2016-01-10 %ipv4: Namespecify the tcp_keepalive_intvl sysctl knob% Nikolay Borisov
+2016-01-10 %ipv4: Namespecify tcp_keepalive_probes sysctl knob% Nikolay Borisov
+2016-01-10 %ipv4: Namespaceify tcp_keepalive_time sysctl knob% Nikolay Borisov
+2016-01-08 %ipv4: eliminate lock count warnings in ping.c% Lance Richardson
+2016-01-08 %ipv4: fix endianness warnings in ip_tunnel_core.c% Lance Richardson
+2015-12-03 %ipv4: igmp: Allow removing groups from a removed interface% Andrew Lunn
+2015-11-24 %net/ipv4/ipconfig: Rejoin broken lines in console output% Geert Uytterhoeven
+2015-11-18 %net ipv4: use preferred log methods% Bastian Stender
+2015-11-05 %ipv4: use sk_fullsock() in ipv4_conntrack_defrag()% Eric Dumazet
+2015-11-04 %ipv4: fix a potential deadlock in mcast getsockopt() path% WANG Cong
+2015-11-04 %ipv4: disable BH when changing ip local port range% WANG Cong
+2015-11-02 %ipv4: use l4 hash for locally generated multipath flows% Paolo Abeni
+2015-11-01 %ipv4: update RTNH_F_LINKDOWN flag on UP event% Julian Anastasov
+2015-11-01 %ipv4: fix to not remove local route on link down% Julian Anastasov
+2015-11-01 %ipv4: add defensive check for CHECKSUM_PARTIAL skbs in ip_fragment% Hannes Frederic Sowa
+2015-11-01 %ipv4: no CHECKSUM_PARTIAL on MSG_MORE corked sockets% Hannes Frederic Sowa
+2015-10-23 %ipv4: implement support for NOPREFIXROUTE ifa flag for ipv4 address% Paolo Abeni
+2015-10-16 %netfilter: ipv4: whitespace around operators% Ian Morris
+2015-10-16 %netfilter: ipv4: code indentation% Ian Morris
+2015-10-16 %netfilter: ipv4: function definition layout% Ian Morris
+2015-10-16 %netfilter: ipv4: ternary operator layout% Ian Morris
+2015-10-16 %netfilter: ipv4: label placement% Ian Morris
+2015-10-14 %Revert "ipv4/icmp: redirect messages can use the ingress daddr as source"% Paolo Abeni
+2015-10-12 %ipv4: Pass struct net into ip_defrag and ip_check_defrag% Eric W. Biederman
+2015-10-12 %ipv4: Only compute net once in ip_call_ra_chain% Eric W. Biederman
+2015-10-12 %ipv4/icmp: redirect messages can use the ingress daddr as source% Paolo Abeni
+2015-10-08 %ipv4, ipv6: Pass net into ip_local_out and ip6_local_out% Eric W. Biederman
+2015-10-08 %ipv4, ipv6: Pass net into __ip_local_out and __ip6_local_out% Eric W. Biederman
+2015-10-08 %ipv4: Cache net in ip_build_and_send_pkt and ip_queue_xmit% Eric W. Biederman
+2015-10-08 %ipv4: Cache net in iptunnel_xmit% Eric W. Biederman
+2015-10-08 %ipv4: Merge ip_local_out and ip_local_out_sk% Eric W. Biederman
+2015-10-08 %ipv4: Merge __ip_local_out and __ip_local_out_sk% Eric W. Biederman
+2015-10-08 %ipv4: Fix ip_queue_xmit to pass sk into ip_local_out_sk% Eric W. Biederman
+2015-10-08 %ipv4: Fix ip_local_out_sk by passing the sk into __ip_local_out_sk% Eric W. Biederman
+2015-10-07 %net: ipv4: tcp.c Fixed an assignment coding style issue% Yuvaraja Mariappan
+2015-10-05 %ipv4: Fix compilation errors in fib_rebalance% Peter Nørlund
+2015-10-05 %ipv4: fix reply_dst leakage on arp reply% Jiri Benc
+2015-10-05 %ipv4: ICMP packet inspection for multipath% Peter Nørlund
+2015-10-05 %ipv4: L3 hash-based multipath% Peter Nørlund
+2015-09-30 %ipv4: Pass struct net through ip_fragment% Eric W. Biederman
+2015-09-29 %net/ipv4: Pass proto as u8 instead of u16 in ip_check_mc_rcu% Alexander Duyck
+2015-09-29 %ipv4: Pass struct net into ip_route_me_harder% Eric W. Biederman
+2015-09-29 %ipv4: Push struct net down into nf_send_reset% Eric W. Biederman
+2015-09-24 %ipv4: send arp replies to the correct tunnel% Jiri Benc
+2015-09-18 %netfilter: Pass net to nf_dup_ipv4 and nf_dup_ipv6% Eric W. Biederman
+2015-09-17 %ipv4: Only compute net once in ipmr_forward_finish% Eric W. Biederman
+2015-09-17 %ipv4: Only compute net once in ip_rcv_finish% Eric W. Biederman
+2015-09-17 %ipv4: Only compute net once in ip_finish_output2% Eric W. Biederman
+2015-09-17 %ipv4: Explicitly compute net in ip_fragment% Eric W. Biederman
+2015-09-17 %ipv4: Only compute net once in ip_do_fragment% Eric W. Biederman
+2015-09-17 %ipv4: Don't recompute net in ipmr_queue_xmit% Eric W. Biederman
+2015-09-17 %ipv4: Remember the net in ip_output and ip_mc_output% Eric W. Biederman
+2015-09-17 %ipv4: Compute net once in ip_rcv% Eric W. Biederman
+2015-09-17 %ipv4: Compute net once in ip_forward_finish% Eric W. Biederman
+2015-09-17 %ipv4: Compute net once in ip_forward% Eric W. Biederman
+2015-08-31 %ipv4: fix 32b build% Madalin Bucur
+2015-08-30 %ipv4: Fix 32-bit build.% David S. Miller
+2015-08-28 %net: Introduce ipv4_addr_hash and use it for tcp metrics% David Ahern
+2015-08-20 %ipv4: Make fib_encap_match static% Ying Xue
+2015-08-16 %ipv4: fix refcount leak in fib_check_nh()% Eric Dumazet
+2015-08-13 %ipv4: off-by-one in continuation handling in /proc/net/route% Andy Whitcroft
+2015-08-12 %net: ipv4: increase dhcp inter device timeout% Mugunthan V N
+2015-08-03 %ipv4: apply lwtunnel encap for locally-generated packets% Robert Shearman
+2015-07-28 %net/ipv4: suppress NETDEV_UP notification on address lifetime update% David Ward
+2015-07-26 %ipv4: be more aggressive when probing alternative gateways% Julian Anastasov
+2015-07-24 %ipv4: consider TOS in fib_select_default% Julian Anastasov
+2015-07-24 %ipv4: fib_select_default should match the prefix% Julian Anastasov
+2015-07-21 %ipv4: redirect dst output to lwtunnel output% Roopa Prabhu
+2015-07-21 %ipv4: support for fib route lwtunnel encap attributes% Roopa Prabhu
+2015-07-11 %Revert "ipv4: use skb coalescing in defragmentation"% Florian Westphal
+2015-07-08 %ipv4: add support for linkdown sysctl to netconf% Andy Gospodarek
+2015-07-08 %ip_tunnel: fix ipv4 pmtu check to honor inner ip header df% Timo Teräs
+2015-06-28 %ipv4: fix RCU lockdep warning from linkdown changes% Andy Gospodarek
+2015-06-24 %net: ipv4 sysctl option to ignore routes when nexthop link is down% Andy Gospodarek
+2015-06-24 %net: track link-status of ipv4 nexthops% Andy Gospodarek
+2015-06-21 %ipv4: include NLM_F_APPEND flag in append route notifications% Roopa Prabhu
+2015-06-16 %netfilter: don't use module_init/exit in core IPV4 code% Paul Gortmaker
+2015-06-12 %net: ipv4: un-inline ip_finish_output2% Florian Westphal
+2015-06-04 %ipv4/udp: Verify multicast group is ours in upd_v4_early_demux()% Shawn Bohrer
+2015-05-27 %net: ipv4: avoid repeated calls to ip_skb_dst_mtu helper% Florian Westphal
+2015-05-27 %ipv4: Fix fib_trie.c build, missing linux/vmalloc.h include.% David S. Miller
+2015-05-22 %ipv4: fill in table id when replacing a route% Michal Kubeček
+2015-05-22 %ipv4: Avoid crashing in ip_error% Eric W. Biederman
+2015-05-19 %ipv4: introduce frag_expire_skip_icmp()% Andy Zhou
+2015-05-13 %geneve: remove MODULE_ALIAS_RTNL_LINK from net/ipv4/geneve.c% John W. Linville
+2015-05-13 %ipv4: __ip_local_out_sk() is static% Eric Dumazet
+2015-05-05 %ipv4/ip_tunnel_core: Use eth_proto_is_802_3% Alexander Duyck
+2015-05-04 %net: ipv4: route: Fix sending IGMP messages with link address% Andrew Lunn
+2015-05-02 %ipv4: remove the unnecessary codes in fib_info_hash_move% Li RongQing
+2015-05-01 %ipv4: Missing sk_nulls_node_init() in ping_unhash().% David S. Miller
+2015-05-01 %ipv4: speedup ip_idents_reserve()% Eric Dumazet
+2015-04-29 %route: Use ipv4_mtu instead of raw rt_pmtu% Herbert Xu
+2015-04-08 %ipv4: ip_tunnel: use net namespace from rtable not socket% Hannes Frederic Sowa
+2015-04-04 %netfilter: Pass nf_hook_state through nf_nat_ipv4_{in,out,fn,local_fn}().% David S. Miller
+2015-04-03 %ipv4: coding style: comparison for inequality with NULL% Ian Morris
+2015-04-03 %ipv4: coding style: comparison for equality with NULL% Ian Morris
+2015-04-02 %ipv4: take rtnl_lock and mark mrt table as freed on namespace cleanup% WANG Cong
+2015-03-25 %ipv4: hash net ptr into fragmentation bucket selection% Hannes Frederic Sowa
+2015-03-25 %tcp: fix ipv4 mapped request socks% Eric Dumazet
+2015-03-23 %ipv4: tcp: handle ICMP messages on TCP_NEW_SYN_RECV request sockets% Eric Dumazet
+2015-03-18 %ipv4, ipv6: kill ip_mc_{join, leave}_group and ipv6_sock_mc_{join, drop}% Marcelo Ricardo Leitner
+2015-03-18 %ipv4,ipv6: grab rtnl before locking the socket% Marcelo Ricardo Leitner
+2015-03-11 %ipv4: FIB Local/MAIN table collapse% Alexander Duyck
+2015-03-06 %ipv4: Create probe timer for tcp PMTU as per RFC4821% Fan Du
+2015-03-06 %ipv4: Use binary search to choose tcp PMTU probe_size% Fan Du
+2015-03-06 %ipv4: Fix unused variable warnings in fib_table_flush_external.% David S. Miller
+2015-03-05 %ipv4: ip_check_defrag should not assume that skb_network_offset is zero% Alexander Drozdov
+2015-02-20 %ipv4: ip_check_defrag should correctly check return value of skb_copy_bits% Alexander Drozdov
+2015-02-09 %ipv4: Namespecify TCP PMTU mechanism% Fan Du
+2015-02-04 %ipv4: raw_send_hdrinc(): pass msghdr% Al Viro
+2015-02-01 %ipv4: tcp: get rid of ugly unicast_sock% Eric Dumazet
+2015-01-31 %ipv4: icmp: use percpu allocation% Eric Dumazet
+2015-01-29 %ipv4: Don't increase PMTU with Datagram Too Big message.% Li Wei
+2015-01-28 %tcp: ipv4: initialize unicast_sock sk_pacing_rate% Eric Dumazet
+2015-01-26 %ipv4: try to cache dst_entries which would cause a redirect% Hannes Frederic Sowa
+2015-01-19 %net: ipv4: handle DSA enabled master network devices% Florian Fainelli
+2015-01-15 %ipv4: per cpu uncached list% Eric Dumazet
+2014-12-08 %ipv4: warn once on passing AF_INET6 socket to ip_recv_error% Willem de Bruijn
+2014-11-16 %ipv4: Fix incorrect error code when adding an unreachable route% Panu Matilainen
+2014-11-10 %ipv4: Avoid reading user iov twice after raw_probe_proto_opt% Herbert Xu
+2014-11-10 %ipv4: Use standard iovec primitive in raw_probe_proto_opt% Herbert Xu
+2014-11-10 %netfilter: nft_masq: fix uninitialized range in nft_masq_{ipv4, ipv6}_eval% Daniel Borkmann
+2014-11-04 %ipv4: remove 0/NULL assignment on static% Fabian Frederick
+2014-11-04 %ipv4: use seq_puts instead of seq_printf where possible% Fabian Frederick
+2014-11-04 %ipv4: include linux/bug.h instead of asm/bug.h% Fabian Frederick
+2014-10-31 %netfilter: nf_reject_ipv4: split nf_send_reset() in smaller functions% Pablo Neira Ayuso
+2014-10-30 %ipv4: Do not cache routing failures due to disabled forwarding.% Nicolas Cavallari
+2014-10-30 %ipv4: minor spelling fixes% stephen hemminger
+2014-10-27 %ipv4: remove set but unused variable sha% Fabian Frederick
+2014-10-18 %ipv4: fix a potential use after free in gre_offload.c% Li RongQing
+2014-10-17 %ipv4: fix a potential use after free in fou.c% Li RongQing
+2014-10-17 %ipv4: fix a potential use after free in ip_tunnel_core.c% Li RongQing
+2014-10-17 %ipv4: dst_entry leak in ip_send_unicast_reply()% Vasily Averin
+2014-10-17 %ipv4: clean up cookie_v4_check()% Cong Wang
+2014-10-17 %ipv4: share tcp_v4_save_options() with cookie_v4_check()% Cong Wang
+2014-10-17 %ipv4: call __ip_options_echo() in cookie_v4_check()% Cong Wang
+2014-10-14 %ipv4: fix nexthop attlen check in fib_nh_match% Jiri Pirko
+2014-10-06 %ipv4: igmp: fix v3 general query drop monitor false positive% Daniel Borkmann
+2014-10-01 %ipv4: mentions skb_gro_postpull_rcsum() in inet_gro_receive()% Eric Dumazet
+2014-09-28 %neigh: check error pointer instead of NULL for ipv4_neigh_lookup()% WANG Cong
+2014-09-28 %ipv4: rename ip_options_echo to __ip_options_echo()% Eric Dumazet
+2014-09-22 %ipv4: do not use this_cpu_ptr() in preemptible context% Eric Dumazet
+2014-09-09 %ipv4: udp4_gro_complete() is static% Eric Dumazet
+2014-09-09 %ipv4: rcu cleanup in ip_ra_control()% Eric Dumazet
+2014-09-09 %net/ipv4: bind ip_nonlocal_bind to current netns% Vincent Bernat
+2014-09-05 %ipv4: harden fnhe_hashfun()% Eric Dumazet
+2014-09-05 %ipv4: fix a race in update_or_create_fnhe()% Eric Dumazet
+2014-09-04 %ipv4: implement igmp_qrv sysctl to tune igmp robustness variable% Hannes Frederic Sowa
+2014-09-02 %netfilter: nft_chain_nat_ipv4: use generic IPv4 NAT code from core% Pablo Neira Ayuso
+2014-08-22 %net/ipv4/igmp.c: Replace rcu_dereference() with rcu_access_pointer()% Andreea-Cristina Bernat
+2014-08-22 %ipv4: Restore accept_local behaviour in fib_validate_source()% Sébastien Barré
+2014-08-08 %ipv4: removed redundant conditional% Niv Yehezkel
+2014-08-02 %ipv4: remove nested rcu_read_lock/unlock% Duan Jiong
+2014-07-30 %ip_tunnel(ipv4): fix tunnels with "local any remote $remote_ip"% Dmitry Popov
+2014-07-29 %ipv4: clean up cast warning in do_ip_getsockopt% Karoly Kemeny
+2014-07-29 %net/ipv4: Use IS_ERR_OR_NULL% Himangi Saraogi
+2014-07-29 %ipv4: fail early when creating netdev named all or default% WANG Cong
+2014-07-23 %ipv4: Make IP_MULTICAST_ALL and IP_MSFILTER work on raw sockets% Quentin Armitage
+2014-07-21 %ipv4: fix buffer overflow in ip_options_compile()% Eric Dumazet
+2014-07-11 %ipv4: remove the unnecessary variable in udp_mcast_next% Li RongQing
+2014-07-07 %ipv4: icmp: Fix pMTU handling for rare case% Edward Allcutt
+2014-06-30 %ipv4: irq safe sk_dst_[re]set() and ipv4_sk_update_pmtu() fix% Eric Dumazet
+2014-06-25 %ipv4: fix dst race in sk_dst_get()% Eric Dumazet
+2014-06-13 %udp: ipv4: do not waste time in __udp4_lib_mcast_demux_lookup% Eric Dumazet
+2014-06-11 %ipv4: fix a race in ip4_datagram_release_cb()% Eric Dumazet
+2014-06-10 %ipip, sit: fix ipv4_{update_pmtu,redirect} calls% Dmitry Popov
+2014-06-05 %ipv4: use skb frags api in udp4_hwcsum()% WANG Cong
+2014-05-22 %ipv4: initialise the itag variable in __mkroute_input% Li RongQing
+2014-05-18 %ipv4: minor spelling fix% stephen hemminger
+2014-05-16 %ipv4: ip_tunnels: disable cache for nbma gre tunnels% Timo Teräs
+2014-05-14 %ipv4: make ip_local_reserved_ports per netns% WANG Cong
+2014-05-08 %ipv4: remove inet_addr_hash_lock in devinet.c% WANG Cong
+2014-05-08 %ipv4: move local_port_range out of CONFIG_SYSCTL% Cong Wang
+2014-05-07 %ipv4: fib_semantics: increment fib_info_cnt after fib_info allocation% Sergey Popovich
+2014-05-07 %net: ipv4: ip_forward: fix inverted local_df test% Florian Westphal
+2014-05-05 %ipv4: fix "conntrack zones" support for defrag user check in ip_expire% Vasily Averin
+2014-05-04 %netfilter: ipv4: defrag: set local_df flag on defragmented skb% Florian Westphal
+2014-04-28 %ipv4: Use predefined value for readability% Hisao Tanabe
+2014-04-16 %ipv4, route: pass 0 instead of LOOPBACK_IFINDEX to fib_validate_source()% Cong Wang
+2014-04-16 %ipv4, fib: pass LOOPBACK_IFINDEX instead of 0 to flowi4_iif% Cong Wang
+2014-04-15 %ipv4: add a sock pointer to dst-&gt;output() path.% Eric Dumazet
+2014-04-15 %ipv4: add a sock pointer to ip_queue_xmit()% Eric Dumazet
+2014-04-13 %ipv4: return valid RTA_IIF on ip route get% Julian Anastasov
+2014-04-13 %net: ipv4: current group_info should be put after using.% Wang, Xiaoming
+2014-03-24 %ipv4: remove ip_rt_dump from route.c% Li RongQing
+2014-03-24 %ipv4: remove ipv4_ifdown_dst from route.c% Li RongQing
+2014-02-26 %ipv4: yet another new IP_MTU_DISCOVER option IP_PMTUDISC_OMIT% Hannes Frederic Sowa
+2014-02-26 %ipv4: use ip_skb_dst_mtu to determine mtu in ip_fragment% Hannes Frederic Sowa
+2014-02-25 %ipv4: ipv6: better estimate tunnel header cut for correct ufo handling% Hannes Frederic Sowa
+2014-02-25 %vti: Update the ipv4 side to use it's own receive hook.% Steffen Klassert
+2014-02-17 %ipv4: fix counter in_slow_tot% Duan Jiong
+2014-02-16 %ipv4: distinguish EHOSTUNREACH from the ENETUNREACH% Duan Jiong
+2014-02-14 %ipv4: ipconfig.c: add parentheses in an if statement% FX Le Bail
+2014-02-13 %ipv4: ip_forward: perform skb-&gt;pkt_type check at the beginning% Denis Kirjanov
+2014-02-06 %ipv4: Fix runtime WARNING in rtmsg_ifa()% Geert Uytterhoeven
+2014-02-04 %net/ipv4: Use proper RCU APIs for writer-side in udp_offload.c% Shlomo Pongratz
+2014-01-30 %net/ipv4: Use non-atomic allocation of udp offloads structure instance% Or Gerlitz
+2014-01-27 %net: ipv4: Use PTR_ERR_OR_ZERO% Sachin Kamat
+2014-01-22 %net/ipv4: queue work on power efficient wq% viresh kumar
+2014-01-21 %ipv6: protect protocols not handling ipv4 from v4 connection/bind attempts% Hannes Frederic Sowa
+2014-01-21 %ipv4: remove the useless argument from ip_tunnel_hash()% Duan Jiong
+2014-01-19 %ipv6: make IPV6_RECVPKTINFO work for ipv4 datagrams% Hannes Frederic Sowa
+2014-01-18 %ipv4: be friend with drop monitor% Eric Dumazet
+2014-01-17 %ipv4: fix a dst leak in tunnels% Eric Dumazet
+2014-01-16 %net/ipv4: don't use module_init in non-modular gre_offload% Paul Gortmaker
+2014-01-14 %ipv4: register igmp_notifier even when !CONFIG_PROC_FS% WANG Cong
+2014-01-13 %ipv4: introduce hardened ip_no_pmtu_disc mode% Hannes Frederic Sowa
+2014-01-13 %ipv4: introduce ip_dst_mtu_maybe_forward and protect forwarding path against ...% Hannes Frederic Sowa
+2014-01-07 %ipv4: loopback device: ignore value changes after device is upped% Jiri Pirko
+2014-01-03 %ipv4: Use percpu Cache route in IP tunnels% Tom Herbert
+2014-01-03 %ipv4: Cache dst in tunnels% Tom Herbert
+2014-01-02 %ipv4: fix tunneled VM traffic over hw VXLAN/GRE GSO NIC% Wei-Chun Chao
+2014-01-02 %ipv4: switch and case should be at the same indent% Weilong Chen
+2014-01-02 %ipv4: spaces required around that '='% Weilong Chen
+2014-01-02 %ipv4: arp: update neighbour address when a gratuitous arp is received and arp...% Salam Noureddine
+2013-12-28 %ipv4: ping make local stuff static% Stephen Hemminger
+2013-12-28 %ipv4: remove unused function% Stephen Hemminger
+2013-12-28 %ipv4: make fib_detect_death static% Stephen Hemminger
+2013-12-26 %ipv4: ipv4: Cleanup the comments in tcp_yeah.c% Weilong Chen
+2013-12-26 %ipv4: ERROR: code indent should use tabs where possible% Weilong Chen
+2013-12-26 %ipv4: ERROR: do not initialise globals to 0 or NULL% Weilong Chen
+2013-12-26 %ipv4: fix all space errors in file igmp.c% Weilong Chen
+2013-12-26 %ipv4: fix checkpatch error with foo * bar% Weilong Chen
+2013-12-26 %ipv4: fix checkpatch error "space prohibited"% Weilong Chen
+2013-12-26 %ipv4: do clean up with spaces% Weilong Chen
+2013-12-22 %ipv4: consistent reporting of pmtu data in case of corking% Hannes Frederic Sowa
+2013-12-18 %ipv4: new ip_no_pmtu_disc mode to always discard incoming frag needed msgs% Hannes Frederic Sowa
+2013-12-18 %inet: make no_pmtu_disc per namespace and kill ipv4_config% Hannes Frederic Sowa
+2013-12-17 %udp: ipv4: do not use sk_dst_lock from softirq context% Eric Dumazet
+2013-12-11 %udp: ipv4: must add synchronization in udp_sk_rx_dst_set()% Eric Dumazet
+2013-12-11 %udp: ipv4: fix potential use after free in udp_v4_early_demux()% Eric Dumazet
+2013-12-11 %ipv4: fix wildcard search with inet_confirm_addr()% Nicolas Dichtel
+2013-12-10 %udp: ipv4: fix an use after free in __udp4_lib_rcv()% Eric Dumazet
+2013-12-10 %ipv4: add support for IFA_FLAGS nl attribute% Jiri Pirko
+2013-12-09 %neigh: use tbl-&gt;family to distinguish ipv4 from ipv6% Jiri Pirko
+2013-12-06 %ipv4/ipv6: Fix FSF address in file headers% Jeff Kirsher
+2013-11-28 %net: remove outdated comment for ipv4 and ipv6 protocol handler% Baker Zhang
+2013-11-20 %ipv4: fix race in concurrent ip_route_input_slow()% Alexei Starovoitov
+2013-11-14 %ipv4: fix possible seqlock deadlock% Eric Dumazet
+2013-11-05 %ipv4: introduce new IP_MTU_DISCOVER mode IP_PMTUDISC_INTERFACE% Hannes Frederic Sowa
+2013-11-03 %netfilter: nf_tables: remove duplicated include from nf_tables_ipv4.c% Wei Yongjun
+2013-10-29 %ipv4: fix DO and PROBE pmtu mode regarding local fragmentation with UFO/CORK% Hannes Frederic Sowa
+2013-10-23 %ipv4: initialize ip4_frags hash secret as late as possible% Hannes Frederic Sowa
+2013-10-21 %ipv4: Allow unprivileged users to use per net sysctls% Eric W. Biederman
+2013-10-21 %ipv4: Use math to point per net sysctls into the appropriate struct net.% Eric W. Biederman
+2013-10-19 %inet: split syncookie keys for ipv4 and ipv6 and initialize with net_get_rand...% Hannes Frederic Sowa
+2013-10-19 %ipv4: split inet_ehashfn to hash functions per compilation unit% Hannes Frederic Sowa
+2013-10-19 %ipv4: gso: make inet_gso_segment() stackable% Eric Dumazet
+2013-10-19 %ipv4: generalize gre_handle_offloads% Eric Dumazet
+2013-10-19 %net: ipv4/ipv6: Remove extern from function prototypes% Joe Perches
+2013-10-19 %ipv4: gso: send_check() &amp; segment() cleanups% Eric Dumazet
+2013-10-17 %ipv4: shrink rt_cache_stat% Eric Dumazet
+2013-10-08 %net: ipv4 only populate IP_PKTINFO when needed% Shawn Bohrer
+2013-10-08 %udp: ipv4: Add udp early demux% Shawn Bohrer
+2013-10-07 %ipv4: fix ineffective source address selection% Jiri Benc
+2013-10-03 %net: ipv4: Change variable type to bool% Peter Senna Tschudin
+2013-09-30 %ipv4 igmp: use in_dev_put in timer handlers instead of __in_dev_put% Salam Noureddine
+2013-09-30 %net ipv4: Convert ipv4.ip_local_port_range to be per netns v3% Eric W. Biederman
+2013-09-28 %ipv4: processing ancillary IP_TOS or IP_TTL% Francesco Fusco
+2013-09-28 %ipv4: IP_TOS and IP_TTL can be specified as ancillary data% Francesco Fusco
+2013-08-30 %ipv4 tunnels: fix an oops when using ipip/sit with IPsec% Li Hongjun
+2013-08-29 %ipv4: sendto/hdrincl: don't use destination address found in header% Chris Clark
+2013-08-28 %{ipv4,xfrm}: Introduce xfrm_tunnel_notifier for xfrm tunnel mode callback% Fan Du
+2013-08-26 %xfrm: revert ipv4 mtu determination to dst_mtu% Hannes Frederic Sowa
+2013-08-20 %ipv4: raise IP_MAX_MTU to theoretical limit% Eric Dumazet
+2013-08-15 %ipv4 tunnels: use net_eq() helper to check netns% Nicolas Dichtel
+2013-07-31 %net: split rt_genid for ipv4 and ipv6% fan.du
+2013-07-28 %ipv4, ipv6: send igmpv3/mld packets with TC_PRIO_CONTROL% Hannes Frederic Sowa
+2013-07-16 %ipv4: set transport header earlier% Eric Dumazet
+2013-06-28 %ipv4: use next hop exceptions also for input routes% Timo Teräs
+2013-06-19 %ipv4: Fixed MD5 key lookups when adding/ removing MD5 to/ from TCP sockets.% Aydin Arik
+2013-06-13 %net/ipv4: ip_vti clear skb cb before tunneling.% Saurabh Mohan
+2013-06-04 %net: ipv4: make the ping /proc code AF-independent% Lorenzo Colitti
+2013-06-03 %ipv4: use separate genid for next hop exceptions% Timo Teräs
+2013-06-03 %ipv4: rate limit updating of next hop exceptions with same pmtu% Timo Teräs
+2013-06-03 %ipv4: properly refresh rtable entries on pmtu/redirect events% Timo Teräs
+2013-05-28 %net, ipv4, ipv6: Correct assignment of skb-&gt;network_header to skb-&gt;tail% Simon Horman
+2013-05-28 %ipv4: Correct comparisons and calculations using skb-&gt;tail and skb-transport_...% Simon Horman
+2013-05-27 %ipv4: fix redirect handling for TCP packets% Michal Kubecek
+2013-05-11 %ipv4: ip_output: remove inline marking of EXPORT_SYMBOL functions% Denis Efremov
+2013-04-25 %net: ipv4: typo issue, remove erroneous semicolon% Chen Gang
+2013-04-08 %net: ipv4: fix schedule while atomic bug in check_lifetime()% Jiri Pirko
+2013-04-08 %net: ipv4: reset check_lifetime_work after changing lifetime% Jiri Pirko
+2013-04-08 %netfilter: ipv4: propagate routing errors from ip_route_me_harder()% Patrick McHardy
+2013-04-05 %net: ipv4: notify when address lifetime changes% Jiri Pirko
+2013-03-26 %ipv4: Fix ip-header identification for gso packets.% Pravin B Shelar
+2013-03-26 %firewire net, ipv4 arp: Extend hardware address and remove driver-level packe...% YOSHIFUJI Hideaki / 吉藤英明
+2013-03-25 %ipv4: Fix ip-header identification for gso packets.% Pravin B Shelar
+2013-03-24 %inet: generalize ipv4-only RFC3168 5.3 ecn fragmentation handling for future ...% Hannes Frederic Sowa
+2013-03-24 %ipv4: provide addr and netconf dump consistency info% Nicolas Dichtel
+2013-03-15 %ipv4: replace ip_fast_csum with csum_replace2% Li RongQing
+2013-03-15 %ipv4: netfilter: use PTR_RET instead of IS_ERR + PTR_ERR% Silviu-Mihai Popescu
+2013-03-12 %net/ipv4: Ensure that location of timestamp option is stored% David Ward
+2013-03-06 %net/ipv4: Timestamp option cannot overflow with prespecified addresses% David Ward
+2013-02-22 %ipv4: fix error handling in icmp_protocol.% Li Wei
+2013-02-21 %ipv4: fix a bug in ping_err().% Li Wei
+2013-02-19 %net: ipv4: fix waring -Wunused-variable% Gao feng
+2013-02-05 %ipv4: Disallow non-namespace aware protocols to register.% David S. Miller
+2013-01-29 %ipv4: introduce address lifetime% Jiri Pirko
+2013-01-22 %ipv4: Use IS_ERR_OR_NULL().% YOSHIFUJI Hideaki / 吉藤英明
+2013-01-22 %ipv4: Fix route refcount on pmtu discovery% Steffen Klassert
+2013-01-21 %ipv4: Add a socket release callback for datagram sockets% Steffen Klassert
+2013-01-21 %ipv4: Invalidate the socket cached route on pmtu events if possible% Steffen Klassert
+2013-01-21 %xfrm4: Invalidate all ipv4 routes on IPsec pmtu events% Steffen Klassert
+2013-01-17 %ipv4: Don't update the pmtu on mtu locked routes% Steffen Klassert
+2013-01-17 %ipv4: Remove output route check in ipv4_mtu% Steffen Klassert
+2013-01-11 %ipv4: fib: fix a comment.% Rami Rosen
+2013-01-11 %net/ipv4: remove depends on CONFIG_EXPERIMENTAL% Kees Cook
+2013-01-11 %net/ipv4/netfilter: remove depends on CONFIG_EXPERIMENTAL% Kees Cook
+2013-01-09 %ipv4: Use FIELD_SIZEOF() in inet_init().% YOSHIFUJI Hideaki / 吉藤英明
+2013-01-06 %ipv4: fix NULL checking in devinet_ioctl()% Xi Wang
+2013-01-04 %net/ipv4/ipconfig: really display the BOOTP/DHCP server's address.% Philippe De Muyter
+2012-12-26 %ipv4/ip_gre: set transport header correctly to gre header% Isaku Yamahata
+2012-12-21 %ipv4: arp: fix a lockdep splat in arp_solicit()% Eric Dumazet
+2012-12-10 %ipv4: ip_check_defrag must not modify skb before unsharing% Johannes Berg
+2012-12-07 %ipv4/route/rtnl: get mcast attributes when dst is multicast% Nicolas Dichtel
+2012-11-26 %ipv4: avoid passing NULL to inet_putpeer() in icmpv4_xrlim_allow()% Neal Cardwell
+2012-11-25 %ipv4/ipmr and ipv6/ip6mr: Convert int mroute_do_&lt;foo&gt; to bool% Joe Perches
+2012-11-25 %ipv4: ipmr: various fixes and cleanups% Eric Dumazet
+2012-11-22 %ipv4: do not cache looped multicasts% Julian Anastasov
+2012-11-18 %net: Allow userns root to control ipv4% Eric W. Biederman
+2012-11-15 %ipv4: Pull GSO registration out of inet_init()% Vlad Yasevich
+2012-11-15 %ipv4: Switch to using the new offload infrastructure.% Vlad Yasevich
+2012-11-14 %ipv4/ip_vti.c: VTI fix post-decryption forwarding% Saurabh Mohan
+2012-11-13 %xfrm: Fix the gc threshold value for ipv4% Steffen Klassert
+2012-11-11 %ipv4: avoid undefined behavior in do_ip_setsockopt()% Xi Wang
+2012-11-01 %rtnl/ipv4: use netconf msg to advertise rp_filter status% Nicolas Dichtel
+2012-10-31 %net/ipv4/ipconfig: add device address to a KERN_INFO message% Claudio Fontana
+2012-10-28 %rtnl/ipv4: add support of RTM_GETNETCONF% Nicolas Dichtel
+2012-10-28 %rtnl/ipv4: use netconf msg to advertise forwarding status% Nicolas Dichtel
+2012-10-23 %ipv4: tcp: clean up tcp_v4_early_demux()% Eric Dumazet
+2012-10-22 %ipv4: 16 slots in initial fib_info hash table% Eric Dumazet
+2012-10-18 %ipv4: Fix flushing of cached routing informations% Steffen Klassert
+2012-10-10 %ipv4: fix route mark sparse warning% stephen hemminger
+2012-10-08 %ipv4: Add FLOWI_FLAG_KNOWN_NH% Julian Anastasov
+2012-10-08 %ipv4: introduce rt_uses_gateway% Julian Anastasov
+2012-10-08 %ipv4: make sure nh_pcpu_rth_output is always allocated% Julian Anastasov
+2012-10-08 %ipv4: fix forwarding for strict source routes% Julian Anastasov
+2012-10-08 %ipv4: fix sending of redirects% Julian Anastasov
+2012-10-08 %ipv4: Don't report stale pmtu values to userspace% Steffen Klassert
+2012-10-08 %ipv4: Don't create nh exeption when the device mtu is smaller than the report...% Steffen Klassert
+2012-10-08 %ipv4: Always invalidate or update the route on pmtu events% Steffen Klassert
+2012-10-04 %ipv4: add a fib_type to fib_info% Eric Dumazet
+2012-10-01 %ipv4: gre: add GRO capability% Eric Dumazet
+2012-09-22 %ipv4: raw: fix icmp_filter()% Eric Dumazet
+2012-09-20 %ipv4: Don't add TCP-code in inet_sock_destruct% Christoph Paasch
+2012-09-18 %netns: move net-&gt;ipv4.rt_genid to net-&gt;rt_genid% Nicolas Dichtel
+2012-09-18 %ipv4/route: arg delay is useless in rt_cache_flush()% Nicolas Dichtel
+2012-09-07 %ipv4/route: arg delay is useless in rt_cache_flush()% Nicolas Dichtel
+2012-09-03 %netfilter: properly annotate ipv4_netfilter_{init,fini}()% Jan Beulich
+2012-08-31 %ipv4: Minor logic clean-up in ipv4_mtu% Alexander Duyck
+2012-08-30 %ipv4: must use rcu protection while calling fib_lookup% Eric Dumazet
+2012-08-30 %net: ipv4: ipmr_expire_timer causes crash when removing net namespace% Francesco Ruggeri
+2012-08-26 %ipv4: fix path MTU discovery with connection tracking% Patrick McHardy
+2012-08-24 %ipv4: take rt_uncached_lock only if needed% Eric Dumazet
+2012-08-22 %ipv4: properly update pmtu% Eric Dumazet
+2012-08-21 %ipv4: fix ip header ident selection in __ip_make_skb()% Eric Dumazet
+2012-08-21 %ipv4: Use newinet-&gt;inet_opt in inet_csk_route_child_sock()% Christoph Paasch
+2012-08-14 %net: ipv4: fib_trie: Don't unnecessarily search for already found fib leaf% Igor Maravic
+2012-08-14 %ipv4: Cache local output routes% Yan, Zheng
+2012-08-10 %ipv4: fix ip_send_skb()% Eric Dumazet
+2012-08-09 %ipv4: tcp: unicast_sock should not land outside of TCP stack% Eric Dumazet
+2012-08-04 %ipv4: Introduce IN_DEV_NET_ROUTE_LOCALNET% Eric Dumazet
+2012-08-04 %ipv4: change inet_addr_hash()% Eric Dumazet
+2012-08-02 %ipv4: route.c cleanup% Eric Dumazet
+2012-07-31 %ipv4: Properly purge netdev references on uncached routes.% David S. Miller
+2012-07-31 %ipv4: Cache routes in nexthop exception entries.% David S. Miller
+2012-07-31 %ipv4: percpu nh_rth_output cache% Eric Dumazet
+2012-07-31 %ipv4: Restore old dst_free() behavior.% Eric Dumazet
+2012-07-30 %ipv4: remove rt_cache_rebuild_count% Eric Dumazet
+2012-07-30 %net: ipv4: fix RCU races on dst refcounts% Eric Dumazet
+2012-07-29 %ipv4: clean up put_child% Lin Ming
+2012-07-29 %ipv4: fix debug info in tnode_new% Lin Ming
+2012-07-27 %ipv4: fix TCP early demux% Eric Dumazet
+2012-07-26 %ipv4: Fix input route performance regression.% David S. Miller
+2012-07-25 %ipv4: rt_cache_valid must check expired routes% Eric Dumazet
+2012-07-23 %ipv4: Change rt-&gt;rt_iif encoding.% David S. Miller
+2012-07-23 %ipv4: Prepare for change of rt-&gt;rt_iif encoding.% David S. Miller
+2012-07-23 %ipv4: Remove all RTCF_DIRECTSRC handliing.% David S. Miller
+2012-07-23 %ipv4: Really ignore ICMP address requests/replies.% David S. Miller
+2012-07-23 %net/ipv4/ip_vti.c: Fix __rcu warnings detected by sparse.% Saurabh
+2012-07-23 %ipv4: Remove redundant assignment% Lin Ming
+2012-07-22 %ipv4: tcp: set unicast_sock uc_ttl to -1% Eric Dumazet
+2012-07-20 %ipv4: Kill rt-&gt;fi% David S. Miller
+2012-07-20 %ipv4: Turn rt-&gt;rt_route_iif into rt-&gt;rt_is_input.% David S. Miller
+2012-07-20 %ipv4: Kill rt-&gt;rt_oif% David S. Miller
+2012-07-20 %ipv4: Dirty less cache lines in route caching paths.% David S. Miller
+2012-07-20 %ipv4: Kill FLOWI_FLAG_RT_NOCACHE and associated code.% David S. Miller
+2012-07-20 %ipv4: Cache input routes in fib_info nexthops.% David S. Miller
+2012-07-20 %ipv4: Cache output routes in fib_info nexthops.% David S. Miller
+2012-07-20 %ipv4: Kill routes during PMTU/redirect updates.% David S. Miller
+2012-07-20 %ipv4: Adjust semantics of rt-&gt;rt_gateway.% David S. Miller
+2012-07-20 %ipv4: Remove 'rt_dst' from 'struct rtable'% David S. Miller
+2012-07-20 %ipv4: Remove 'rt_mark' from 'struct rtable'% David Miller
+2012-07-20 %ipv4: Kill 'rt_src' from 'struct rtable'% David Miller
+2012-07-20 %ipv4: Remove rt_key_{src,dst,tos} from struct rtable.% David Miller
+2012-07-20 %ipv4: Kill ip_route_input_noref().% David Miller
+2012-07-20 %ipv4: Delete routing cache.% David S. Miller
+2012-07-20 %ipv4: show pmtu in route list% Julian Anastasov
+2012-07-19 %ipv4: Fix again the time difference calculation% Julian Anastasov
+2012-07-19 %ipv4: tcp: remove per net tcp_sock% Eric Dumazet
+2012-07-19 %ipv4: use seqlock for nh_exceptions% Julian Anastasov
+2012-07-19 %ipv4: Fix time difference calculation in rt_bind_exception().% David S. Miller
+2012-07-19 %ipv4: fix address selection in fib_compute_spec_dst% Julian Anastasov
+2012-07-19 %ipv4: optimize fib_compute_spec_dst call in ip_options_echo% Julian Anastasov
+2012-07-18 %net/ipv4: VTI support new module for ip_vti.% Saurabh
+2012-07-18 %net/ipv4: VTI support rx-path hook in xfrm4_mode_tunnel.% Saurabh
+2012-07-17 %ipv4: fix rcu splat% Eric Dumazet
+2012-07-17 %ipv4: Fix nexthop exception hash computation.% David S. Miller
+2012-07-17 %ipv4: Add FIB nexthop exceptions.% David S. Miller
+2012-07-16 %ipv4: Add helper inet_csk_update_pmtu().% David S. Miller
+2012-07-13 %ipv4: Don't store a rule pointer in fib_result.% David S. Miller
+2012-07-12 %ipv4: Remove tb_peers from fib_table.% David S. Miller
+2012-07-12 %ipv4: Put proper checks into icmp_socket_deliver().% David S. Miller
+2012-07-12 %ipv4: Fix warnings in ip_do_redirect() for some configurations.% David S. Miller
+2012-07-11 %ipv4: Kill ip_rt_redirect().% David S. Miller
+2012-07-11 %ipv4: Add redirect support to all protocol icmp error handlers.% David S. Miller
+2012-07-11 %ipv4: Add ipv4_redirect() and ipv4_sk_redirect() helper functions.% David S. Miller
+2012-07-11 %ipv4: Generalize ip_do_redirect() and hook into new dst_ops-&gt;redirect.% David S. Miller
+2012-07-11 %ipv4: Rearrange arguments to ip_rt_redirect()% David S. Miller
+2012-07-11 %ipv4: Pull redirect instantiation out into a helper function.% David S. Miller
+2012-07-11 %ipv4: Deliver ICMP redirects to sockets too.% David S. Miller
+2012-07-11 %ipv4: Pull icmp socket delivery out into a helper function.% David S. Miller
+2012-07-10 %ipv4: Remove inetpeer from routes.% David S. Miller
+2012-07-10 %ipv4: Calling -&gt;cow_metrics() now is a bug.% David S. Miller
+2012-07-10 %ipv4: Kill dst_copy_metrics() call from ipv4_blackhole_route().% David S. Miller
+2012-07-10 %ipv4: Enforce max MTU metric at route insertion time.% David S. Miller
+2012-07-10 %ipv4: Maintain redirect and PMTU info in struct rtable again.% David S. Miller
+2012-07-05 %ipv4: Avoid overhead when no custom FIB rules are installed.% David S. Miller
+2012-07-05 %ipv4: defer fib_compute_spec_dst() call% Eric Dumazet
+2012-07-05 %ipv4: No need to set generic neighbour pointer.% David S. Miller
+2012-07-05 %ipv4: Don't report neigh uptodate state in rtcache procfs.% David S. Miller
+2012-07-05 %ipv4: Make neigh lookups directly in output packet path.% David S. Miller
+2012-07-04 %ipv4: Fix crashes in ip_options_compile().% David S. Miller
+2012-06-29 %ipv4: Elide fib_validate_source() completely when possible.% David S. Miller
+2012-06-28 %ipv4: Remove extraneous assignment of dst-&gt;tclassid.% David S. Miller
+2012-06-28 %ipv4: Adjust in_dev handling in fib_validate_source()% David S. Miller
+2012-06-28 %ipv4: Fix bugs in fib_compute_spec_dst().% David S. Miller
+2012-06-28 %ipv4: Kill rt-&gt;rt_spec_dst, no longer used.% David S. Miller
+2012-06-28 %ipv4: Create and use fib_compute_spec_dst() helper.% David S. Miller
+2012-06-28 %ipv4: Show that ip_send_reply() is purely unicast routine.% David S. Miller
+2012-06-27 %ipv4: Kill early demux method return value.% David S. Miller
+2012-06-27 %Revert "ipv4: tcp: dont cache unconfirmed intput dst"% David S. Miller
+2012-06-27 %ipv4: tcp: dont cache unconfirmed intput dst% Eric Dumazet
+2012-06-26 %ipv4: Cache ip_error() routes even when not forwarding.% David S. Miller
+2012-06-26 %ipv4: Remove unnecessary code from rt_check_expire().% David S. Miller
+2012-06-22 %ipv4: tcp: dont cache output dst for syncookies% Eric Dumazet
+2012-06-22 %ipv4: Add sysctl knob to control early socket demux% Alexander Duyck
+2012-06-19 %ipv4: Early TCP socket demux.% David S. Miller
+2012-06-17 %ipv4: Cap ADVMSS metric in the FIB rather than the routing cache.% David S. Miller
+2012-06-14 %ipv4: Handle PMTU in all ICMP error handlers.% David S. Miller
+2012-06-12 %ipv4: Add interface option to enable routing of 127.0.0.0/8% Thomas Graf
+2012-06-11 %ipv4: Kill ip_rt_frag_needed().% David S. Miller
+2012-06-07 %netfilter: ipv4, defrag: switch hook PFs to nfproto% Alban Crequy
+2012-06-07 %netfilter: nf_ct_ipv4: add namespace support% Gao feng
+2012-05-24 %ipv4: fix the rcu race between free_fib_info and ip_route_output_slow% Yanmin Zhang
+2012-05-20 %net/ipv4: replace simple_strtoul with kstrtoul% Eldad Zack
+2012-05-20 %net/ipv4/ipconfig: neaten __setup placement% Eldad Zack
+2012-05-19 %ipv4: use skb coalescing in defragmentation% Eric Dumazet
+2012-05-16 %net: ipv4 and ipv6: Convert printk(KERN_DEBUG to pr_debug% Joe Perches
+2012-05-10 %ipv4: Do not use dead fib_info entries.% David S. Miller
+2012-04-20 %net ipv4: Convert devinet to use register_net_sysctl% Eric W. Biederman
+2012-04-20 %net ipv4: Remove the unneeded registration of an empty net/ipv4/neigh% Eric W. Biederman
+2012-04-19 %ipv4: dont drop packet in defrag but consume it% Eric Dumazet
+2012-04-18 %net/ipv4:Remove two memleak reports by kmemleak_not_leak.% majianpeng
+2012-04-15 %ipv4: fix checkpatch errors% Daniel Baluta
+2012-04-10 %netfilter: nf_ct_ipv4: packets with wrong ihl are invalid% Jozsef Kadlecsik
+2012-04-10 %netfilter: nf_ct_ipv4: handle invalid IPv4 and IPv6 packets consistently% Jozsef Kadlecsik
+2012-04-02 %netfilter: ipv4: Stop using NLA_PUT*().% David S. Miller
+2012-04-02 %ipv4: Stop using NLA_PUT*().% David S. Miller
+2012-03-28 %net/ipv4: fix IPv4 multicast over network namespaces% Benjamin LaHaise
+2012-03-12 %net: ipv4: Standardize prefixes for message logging% Joe Perches
+2012-03-09 %ipv4: Make ip_rcv_options() return bool.% David S. Miller
+2012-03-09 %ipv4: Make ip_call_ra_chain() return bool.% David S. Miller
+2012-02-21 %ipv4: ping: Fix recvmsg MSG_OOB error handling.% David S. Miller
+2012-02-21 %ipv4: Convert call_rcu() to kfree_rcu(), drop opt_kfree_rcu% Paul E. McKenney
+2012-02-21 %ipv4: Convert call_rcu() to kfree_rcu(), drop opt_kfree_rcu()% Paul E. McKenney
+2012-02-15 %ipv4: Eliminate spurious argument to __ipv4_neigh_lookup% David S. Miller
+2012-02-10 %ipv4: Fix wrong order of ip_rt_get_source() and update iph-&gt;daddr.% Li Wei
+2012-02-08 %ipv4: Implement IP_UNICAST_IF socket option.% Erich E. Hoover
+2012-01-27 %ipv4: ip_gre: Convert to dst_neigh_lookup()% David S. Miller
+2012-01-26 %ipv4/ipv6: Prepare for new route gateway semantics.% David S. Miller
+2012-01-24 %ipv4: Remove bogus checks of rt_gateway being zero.% David S. Miller
+2011-12-22 %ipv4: using prefetch requires including prefetch.h% Stephen Rothwell
+2011-12-21 %ipv4: reintroduce route cache garbage collector% Eric Dumazet
+2011-12-12 %per-netns ipv4 sysctl_tcp_mem% Glauber Costa
+2011-12-06 %ipv4: arp: Cleanup in arp.c% Igor Maravic
+2011-12-05 %ipv4: Fix peer validation on cached lookup.% David S. Miller
+2011-12-04 %netfilter: add ipv4 reverse path filter match% Florian Westphal
+2011-12-04 %net: ipv4: export fib_lookup and fib_table_lookup% Florian Westphal
+2011-12-03 %ipv4: make sure RTO_ONLINK is saved in routing cache% Julian Anastasov
+2011-12-01 %ipv4: flush route cache after change accept_local% Peter Pan(潘卫平)
+2011-12-01 %ipv4: Perform peer validation on cached route lookup.% David S. Miller
+2011-12-01 %ipv4: use a 64bit load/store in output path% Eric Dumazet
+2011-11-30 %ipv4 : igmp : Delete useless parameter in ip_mc_add1_src()% Jun Zhao
+2011-11-30 %neigh: Do not set tbl-&gt;entry_size in ipv4/ipv6 neigh tables.% David Miller
+2011-11-30 %ipv4: fix lockdep splat in rt_cache_seq_show% Eric Dumazet
+2011-11-29 %ipv4: remove useless codes in ipmr_device_event()% RongQing.Li
+2011-11-26 %ipv4: Don't use the cached pmtu informations for input routes% Steffen Klassert
+2011-11-23 %ipv4: Save nexthop address of LSRR/SSRR option to IPCB.% Li Wei
+2011-11-23 %ipv4 : igmp : fix error handle in ip_mc_add_src()% Jun Zhao
+2011-11-18 %ipv4: fix redirect handling% Eric Dumazet
+2011-11-18 %ipv4: Remove all uses of LL_ALLOCATED_SPACE% Herbert Xu
+2011-11-14 %ipv4: fix a memory leak in ic_bootp_send_if% RongQing.Li
+2011-11-09 %ipv4: PKTINFO doesnt need dst reference% Eric Dumazet
+2011-11-09 %ipv4: reduce percpu needs for icmpmsg mibs% Eric Dumazet
+2011-11-09 %ipv4: fix for ip_options_rcv_srr() daddr update.% Li Wei
+2011-11-08 %ipv4: Fix inetpeer expire time information% Steffen Klassert
+2011-10-24 %ipv4: avoid useless call of the function check_peer_pmtu% Gao feng
+2011-10-24 %ipv4: tcp: fix TOS value in ACK messages sent from TIME_WAIT% Eric Dumazet
+2011-10-24 %ipv4: fix ipsec forward performance regression% Yan, Zheng
+2011-10-19 %ipv4: compat_ioctl is local to af_inet.c, make it static% Gerrit Renker
+2011-10-03 %ipv4: NET_IPV4_ROUTE_GC_INTERVAL removal% Vasily Averin
+2011-09-16 %ipv4: Fix fib_info-&gt;fib_metrics leak% Yan, Zheng
+2011-08-30 %net: ipv4: relax AF_INET check in bind()% Eric Dumazet
+2011-08-24 %net: ipv4: convert to SKB frag APIs% Ian Campbell
+2011-08-11 %ipv4: some rt_iif -&gt; rt_route_iif conversions% Julian Anastasov
+2011-08-07 %ipv4: use dst with ref during bcast/mcast loopback% Julian Anastasov
+2011-08-07 %ipv4: route non-local sources for raw socket% Julian Anastasov
+2011-08-07 %ipv4: Fix ip_getsockopt for IP_PKTOPTIONS% Daniel Baluta
+2011-08-07 %ipv4: fix the reusing of routing cache entries% Julian Anastasov
+2011-07-23 %ipv4: use RT_TOS after some rt_tos conversions% Julian Anastasov
+2011-07-21 %ipv4: Constrain UFO fragment sizes to multiples of 8 bytes% Bill Sommerfeld
+2011-07-18 %ipv4: save cpu cycles from check_leaf()% Eric Dumazet
+2011-07-16 %ipv4: Use calculated 'neigh' instead of re-evaluating dst-&gt;neighbour% David S. Miller
+2011-07-13 %ipv4: Inline neigh binding.% David Miller
+2011-07-11 %ipv4: Use universal hash for ARP.% David S. Miller
+2011-07-05 %ipv4: Add ip_defrag() agent IP_DEFRAG_AF_PACKET.% David S. Miller
+2011-07-01 %ipv4: Don't use ufo handling on later transformed packets% Steffen Klassert
+2011-07-01 %ipv4: Reduce switch/case indent% Joe Perches
+2011-06-27 %ipv4: Fix IPsec slowpath fragmentation problem% Steffen Klassert
+2011-06-27 %ipv4: Fix packet size calculation in __ip_append_data% Steffen Klassert
+2011-06-20 %ipv4, ping: Remove duplicate icmp.h include% Jesper Juhl
+2011-06-18 %ipv4: fix multicast losses% Eric Dumazet
+2011-06-09 %ipv4: Fix packet size calculation for raw IPsec packets in __ip_append_data% Steffen Klassert
+2011-06-01 %net/ipv4: Check for mistakenly passed in non-IPv4 address% Marcus Meissner
+2011-05-22 %ipv4: Give backtrace in ip_rt_bug().% Dave Jones
+2011-05-22 %ipv4: Include linux/prefetch.h in fib_trie.c% David S. Miller
+2011-05-18 %ipv4: Pass explicit destination address to rt_bind_peer().% David S. Miller
+2011-05-18 %ipv4: Pass explicit destination address to rt_get_peer().% David S. Miller
+2011-05-18 %ipv4: Make caller provide flowi4 key to inet_csk_route_req().% David S. Miller
+2011-05-18 %ipv4: Kill RT_CACHE_DEBUG% David S. Miller
+2011-05-17 %ipv4: Don't use enums as bitmasks in ip_fragment.c% David S. Miller
+2011-05-16 %ipv4: more compliant RFC 3168 support% Eric Dumazet
+2011-05-16 %ipv4: Trivial rt-&gt;rt_src conversions in net/ipv4/route.c% David S. Miller
+2011-05-13 %ipv4: Remove rt-&gt;rt_dst reference from ip_forward_options().% David S. Miller
+2011-05-13 %ipv4: Remove route key identity dependencies in ip_rt_get_source().% David S. Miller
+2011-05-13 %ipv4: Always call ip_options_build() after rest of IP header is filled in.% David S. Miller
+2011-05-13 %ipv4: Kill spurious write to iph-&gt;daddr in ip_forward_options().% David S. Miller
+2011-05-13 %net: ipv4: add IPPROTO_ICMP socket kind% Vasiliy Kulikov
+2011-05-12 %ipv4: Fix 'iph' use before set.% David S. Miller
+2011-05-12 %ipv4: Elide use of rt-&gt;rt_dst in ip_forward()% David S. Miller
+2011-05-12 %ipv4: Simplify iph-&gt;daddr overwrite in ip_options_rcv_srr().% David S. Miller
+2011-05-12 %ipv4: Kill spurious opt-&gt;srr check in ip_options_rcv_srr().% David S. Miller
+2011-05-10 %ipv4: xfrm: Eliminate -&gt;rt_src reference in policy code.% David S. Miller
+2011-05-10 %ipv4: udp: Eliminate remaining uses of rt-&gt;rt_src% David S. Miller
+2011-05-10 %ipv4: icmp: Eliminate remaining uses of rt-&gt;rt_src% David S. Miller
+2011-05-10 %ipv4: Pass explicit daddr arg to ip_send_reply().% David S. Miller
+2011-05-08 %ipv4: Pass flow key down into ip_append_*().% David S. Miller
+2011-05-08 %ipv4: Pass flow keys down into datagram packet building engine.% David S. Miller
+2011-05-08 %ipv4: Don't use rt-&gt;rt_{src,dst} in ip_queue_xmit().% David S. Miller
+2011-05-08 %ipv4: Use inet_csk_route_child_sock() in DCCP and TCP.% David S. Miller
+2011-05-08 %ipv4: Create inet_csk_route_child_sock().% David S. Miller
+2011-05-08 %ipv4: Use cork flow in ip_queue_xmit()% David S. Miller
+2011-05-08 %ipv4: Use cork flow in inet_sk_{reselect_saddr,rebuild_header}()% David S. Miller
+2011-05-08 %ipv4: Lock socket and use cork flow in ip4_datagram_connect().% David S. Miller
+2011-05-06 %ipv4: Initialize cork-&gt;opt using NULL not 0.% David S. Miller
+2011-05-06 %ipv4: Initialize on-stack cork more efficiently.% David S. Miller
+2011-05-04 %ipv4: Kill rt-&gt;rt_{src, dst} usage in IP GRE tunnels.% David S. Miller
+2011-05-04 %ipv4: Pass explicit saddr/daddr args to ipmr_get_route().% David S. Miller
+2011-05-04 %ipv4: In ip_build_and_send_pkt() use 'saddr' and 'daddr' args passed in.% David S. Miller
+2011-05-04 %ipv4: Use flowi4-&gt;{daddr,saddr} in ipip_tunnel_xmit().% David S. Miller
+2011-05-03 %ipv4: Use flowi4's {saddr,daddr} in igmpv3_newpack() and igmp_send_report()% David S. Miller
+2011-05-03 %ipv4: Make caller provide on-stack flow key to ip_route_output_ports().% David S. Miller
+2011-05-03 %ipv4: Renamt struct rtable's rt_tos to rt_key_tos.% David S. Miller
+2011-05-03 %ipv4: Rework ipmr_rt_fib_lookup() flow key initialization.% David S. Miller
+2011-05-02 %ipv4: Make sure flowi4-&gt;{saddr,daddr} are always set.% David S. Miller
+2011-05-01 %ipv4: don't spam dmesg with "Using LC-trie" messages% Alexey Dobriyan
+2011-04-29 %ipv4, ipv6, bonding: Restore control over number of peer notifications% Ben Hutchings
+2011-04-28 %ipv4: Get route daddr from flow key in tcp_v4_connect().% David S. Miller
+2011-04-28 %ipv4: Get route daddr from flow key in inet_csk_route_req().% David S. Miller
+2011-04-28 %ipv4: Get route daddr from flow key in ip4_datagram_connect().% David S. Miller
+2011-04-28 %ipv4: Fetch route saddr from flow key in tcp_v4_connect().% David S. Miller
+2011-04-28 %ipv4: Fetch route saddr from flow key in ip4_datagram_connect().% David S. Miller
+2011-04-28 %ipv4: Fetch route saddr from flow key in inet_sk_reselect_saddr().% David S. Miller
+2011-04-28 %ipv4: Use caller's on-stack flowi as-is in output route lookups.% David S. Miller
+2011-04-27 %ipv4: Remove erroneous check in igmpv3_newpack() and igmp_send_report().% David S. Miller
+2011-04-27 %ipv4: Sanitize and simplify ip_route_{connect,newports}()% David S. Miller
+2011-04-17 %bonding, ipv4, ipv6, vlan: Handle NETDEV_BONDING_FAILOVER like NETDEV_NOTIFY_...% Ben Hutchings
+2011-04-14 %ipv4: Call fib_select_default() only when actually necessary.% David S. Miller
+2011-04-07 %ipv4: Fix "Set rt-&gt;rt_iif more sanely on output routes."% OGAWA Hirofumi
+2011-03-31 %ipv4: Use flowi4_init_output() in udp_sendmsg()% David S. Miller
+2011-03-31 %ipv4: Use flowi4_init_output() in cookie_v4_check()% David S. Miller
+2011-03-31 %ipv4: Use flowi4_init_output() in raw_sendmsg()% David S. Miller
+2011-03-31 %ipv4: Use flowi4_init_output() in ip_send_reply()% David S. Miller
+2011-03-31 %ipv4: Use flowi4_init_output() in inet_connection_sock.c% David S. Miller
+2011-03-30 %net: gre: provide multicast mappings for ipv4 and ipv6% Timo Teräs
+2011-03-28 %ipv4: Don't ip_rt_put() an error pointer in RAW sockets.% David S. Miller
+2011-03-27 %ipv4: Fix IP timestamp option (IPOPT_TS_PRESPEC) handling in ip_options_echo()% Jan Luebbe
+2011-03-25 %ipv4: do not ignore route errors% Julian Anastasov
+2011-03-24 %ipv4: Fix nexthop caching wrt. scoping.% David S. Miller
+2011-03-24 %ipv4: Invalidate nexthop cache nh_saddr more correctly.% David S. Miller
+2011-03-24 %ipv4: fix fib metrics% Eric Dumazet
+2011-03-23 %ipv4: fix ip_rt_update_pmtu()% Eric Dumazet
+2011-03-23 %ipv4: Fallback to FIB local table in __ip_dev_find().% David S. Miller
+2011-03-22 %ipv4: optimize route adding on secondary promotion% Julian Anastasov
+2011-03-22 %ipv4: remove the routes on secondary promotion% Julian Anastasov
+2011-03-22 %ipv4: fix route deletion for IPs on many subnets% Julian Anastasov
+2011-03-22 %ipv4: match prefsrc when deleting routes% Julian Anastasov
+2011-03-13 %ipv4: Fix PMTU update.% Hiroaki SHIMODA
+2011-03-12 %ipv4: Kill fib_semantic_match declaration from fib_lookup.h% David S. Miller
+2011-03-12 %ipv4: Use flowi4 in UDP% David S. Miller
+2011-03-12 %ipv4: Use flowi4 in ipmr code.% David S. Miller
+2011-03-12 %ipv4: Use flowi4 in FIB layer.% David S. Miller
+2011-03-12 %ipv4: Use flowi4 in public route lookup interfaces.% David S. Miller
+2011-03-12 %ipv4: Use struct flowi4 internally in routing lookups.% David S. Miller
+2011-03-12 %ipv4: Pass ipv4 flow objects into fib_lookup() paths.% David S. Miller
+2011-03-12 %ipv4: Create and use route lookup helpers.% David S. Miller
+2011-03-10 %ipv4: Kill flowi arg to fib_select_multipath()% David S. Miller
+2011-03-10 %ipv4: Remove unnecessary test from ip_mkroute_input()% David S. Miller
+2011-03-10 %ipv4: Remove redundant RCU locking in ip_check_mc().% David S. Miller
+2011-03-09 %ipv4: Optimize flow initialization in fib_validate_source().% David S. Miller
+2011-03-09 %ipv4: Optimize flow initialization in input route lookup.% David S. Miller
+2011-03-09 %ipv4: Lookup multicast routes by rtable using helper.% David S. Miller
+2011-03-09 %ipv4: Fix erroneous uses of ifa_address.% David S. Miller
+2011-03-08 %ipv4: Fix scope value used in route src-address caching.% David S. Miller
+2011-03-07 %ipv4: Cache source address in nexthop entries.% David S. Miller
+2011-03-07 %ipv4: Inline fib_semantic_match into check_leaf% David S. Miller
+2011-03-07 %ipv4: Validate route entry type at insert instead of every lookup.% David S. Miller
+2011-03-04 %ipv4: Remove flowi from struct rtable.% David S. Miller
+2011-03-04 %ipv4: Set rt-&gt;rt_iif more sanely on output routes.% David S. Miller
+2011-03-04 %ipv4: Get peer more cheaply in rt_init_metrics().% David S. Miller
+2011-03-04 %ipv4: Optimize flow initialization in output route lookup.% David S. Miller
+2011-03-03 %ipv4: Fix __ip_dev_find() to use ifa_local instead of ifa_address.% David S. Miller
+2011-03-03 %ipv4: Fix crash in dst_release when udp_sendmsg route lookup fails.% David S. Miller
+2011-03-02 %ipv4: ip_route_output_key() is better as an inline.% David S. Miller
+2011-03-02 %ipv4: Make output route lookup return rtable directly.% David S. Miller
+2011-03-01 %ipv4: Make icmp route lookup code a bit clearer.% David S. Miller
+2011-03-01 %ipv4: Kill can_sleep arg to ip_route_output_flow()% David S. Miller
+2011-03-01 %ipv4: Make final arg to ip_route_output_flow to be boolean "can_sleep"% David S. Miller
+2011-03-01 %ipv4: Can final ip_route_connect() arg to boolean "can_sleep".% David S. Miller
+2011-02-24 %ipv4: Rearrange how ip_route_newports() gets port keys.% David S. Miller
+2011-02-18 %ipv4: Implement __ip_dev_find using new interface address hash.% David S. Miller
+2011-02-18 %ipv4: Add hash table of interface addresses.% David S. Miller
+2011-02-17 %ipv4: Use const'ify fib_result deep in the route call chains.% David S. Miller
+2011-02-17 %ipv4: Avoid use of signed integers in fib_trie code.% David S. Miller
+2011-02-17 %ipv4: Consolidate ipv4 dst allocation logic.% David S. Miller
+2011-02-17 %ipv4: Move rcu_read_{lock,unlock}() into ip_route_output_slow().% David S. Miller
+2011-02-17 %ipv4: Simplify output route creation call sequence.% David S. Miller
+2011-02-14 %ipv4: Cache learned redirect information in inetpeer.% David S. Miller
+2011-02-14 %ipv4: Cache learned PMTU information in inetpeer.% David S. Miller
+2011-02-14 %ipv4: fix rcu lock imbalance in fib_select_default()% Eric Dumazet
+2011-02-04 %ipv4: Don't miss existing cached metrics in new routes.% David S. Miller
+2011-02-03 %net: Support compat SIOCGETVIFCNT ioctl in ipv4.% David S. Miller
+2011-02-02 %ipv4: Fix fib_trie build in some configurations.% David S. Miller
+2011-02-01 %ipv4: Rename fib_hash_* locals in fib_semantics.c% David S. Miller
+2011-02-01 %ipv4: Update some fib_hash centric interface names.% David S. Miller
+2011-02-01 %ipv4: Remove fib_hash.% David S. Miller
+2011-01-31 %ipv4: Consolidate all default route selection implementations.% David S. Miller
+2011-01-31 %ipv4: Remember FIB alias list head and table in lookup results.% David S. Miller
+2011-01-30 %net: Add compat ioctl support for the ipv4 multicast ioctl SIOCGETSGCNT% Eric W. Biederman
+2011-01-28 %ipv4: If fib metrics are default, no need to grab ref to FIB info.% David S. Miller
+2011-01-28 %ipv4: Attach FIB info to dst_default_metrics when possible% David S. Miller
+2011-01-28 %ipv4: Allocate fib metrics dynamically.% David S. Miller
+2011-01-27 %net: Store ipv4/ipv6 COW'd metrics in inetpeer cache.% David S. Miller
+2011-01-06 %ipv4: IP defragmentation must be ECN aware% Eric Dumazet
+2011-01-04 %ipv4/route.c: respect prefsrc for local routes% Joel Sing
+2010-12-25 %ipv4: dont create routes on down devices% Eric Dumazet
+2010-12-23 %Revert "ipv4: Allow configuring subnets as local addresses"% David S. Miller
+2010-12-20 %ipv4: Flush per-ns routing cache more sanely.% David S. Miller
+2010-12-12 %ipv4: Don't pre-seed hoplimit metric.% David S. Miller
+2010-11-28 %tcp: restrict net.ipv4.tcp_adv_win_scale (#20312)% Alexey Dobriyan
+2010-11-22 %Net: ipv4: netfilter: Makefile: Remove deprecated kbuild goal definitions% Tracey Dent
+2010-11-17 %net: ipv4: tcp_probe: cleanup snprintf() use% Vasiliy Kulikov
+2010-11-17 %ipv4: AF_INET link address family% Thomas Graf
+2010-11-15 %ipv4: Fix build with multicast disabled.% David S. Miller
+2010-11-11 %ipv4: Make rt-&gt;fl.iif tests lest obscure.% David S. Miller
+2010-11-09 %net/ipv4/tcp.c: Update WARN uses% Joe Perches
+2010-11-03 %ipv4: netfilter: ip_tables: fix information leak to userland% Vasiliy Kulikov
+2010-11-03 %ipv4: netfilter: arp_tables: fix information leak to userland% Vasiliy Kulikov
+2010-10-27 %ipv4: add __rcu annotations to routes.c% Eric Dumazet
+2010-10-25 %ipv4: add __rcu annotations to ip_ra_chain% Eric Dumazet
+2010-10-18 %IPv4: route.c: Change checks against 0xffffffff to ipv4_is_lbcast()% Andy Walls
+2010-10-08 %ipv4: Remove leftover rcu_read_unlock calls from __mkroute_output()% Dimitris Michailidis
+2010-10-03 %ipv4: correct IGMP behavior on v3 query during v2-compatibility mode% David Stevens
+2010-10-03 %Revert "ipv4: Make INET_LRO a bool instead of tristate."% Ben Hutchings
+2010-09-30 %ipv4: rcu conversion in ip_route_output_slow% Eric Dumazet
+2010-09-30 %ipv4: introduce __ip_dev_find()% Eric Dumazet
+2010-09-30 %ipv4: __mkroute_output() speedup% Eric Dumazet
+2010-09-28 %ipv4: Allow configuring subnets as local addresses% Tom Herbert
+2010-09-15 %ipv4: ip_ptr cleanups% Eric Dumazet
+2010-09-13 %ipv4: enable getsockopt() for IP_NODEFRAG% Michael Kerrisk
+2010-09-13 %ipv4: force_igmp_version ignored when a IGMPv3 query received% Bob Arendt
+2010-09-08 %ipv4: Suppress lockdep-RCU false positive in FIB trie (3)% Jarek Poplawski
+2010-09-07 %ipv4: Fix reverse path filtering with multipath routing.% David S. Miller
+2010-09-01 %ipv4: minor fix about RPF in help of Kconfig% Nicolas Dichtel
+2010-08-27 %net/ipv4: Eliminate kstrdup memory leak% Julia Lawall
+2010-07-12 %net/ipv4: EXPORT_SYMBOL cleanups% Eric Dumazet
+2010-07-07 %net/ipv4/ip_output.c: Removal of unused variable in ip_fragment()% George Kadianakis
+2010-07-05 %ipv4: use skb_dst_copy() in ip_copy_metadata()% Eric Dumazet
+2010-06-07 %ipv4: avoid two atomic ops in ip_rt_redirect()% Eric Dumazet
+2010-06-03 %ipv4: RCU changes in __mkroute_input()% Eric Dumazet
+2010-06-03 %ipv4: RCU conversion of ip_route_input_slow/ip_route_input_mc% Eric Dumazet
+2010-06-03 %ipv4: add LINUX_MIB_IPRPFILTER snmp counter% Eric Dumazet
+2010-06-01 %net/ipv4/igmp.c: Remove unnecessary kmalloc casts% Joe Perches
+2010-05-31 %net/ipv4/tcp_input.c: fix compilation breakage when FASTRETRANS_DEBUG &gt; 1% Joe Perches
+2010-05-10 %net: Fix FDDI and TR config checks in ipv4 arp and LLC.% David S. Miller
+2010-05-08 %ipv4: remove ip_rt_secret timer (v4)% Neil Horman
+2010-05-06 %ipv4: udp: fix short packet and bad checksum logging% Bjørn Mork
+2010-04-15 %ipv4: ipmr: fix NULL pointer deref during unres queue destruction% Patrick McHardy
+2010-04-15 %ipv4: ipmr: fix invalid cache resolving when adding a non-matching entry% Patrick McHardy
+2010-04-15 %ipv4: ipmr: fix IP_MROUTE_MULTIPLE_TABLES Kconfig dependencies% Patrick McHardy
+2010-04-13 %ipv4: ipmr: support multiple tables% Patrick McHardy
+2010-04-13 %ipv4: ipmr: move mroute data into seperate structure% Patrick McHardy
+2010-04-13 %ipv4: ipmr: convert struct mfc_cache to struct list_head% Patrick McHardy
+2010-04-13 %ipv4: ipmr: remove net pointer from struct mfc_cache% Patrick McHardy
+2010-04-13 %ipv4: ipmr: move unres_queue and timer to per-namespace data% Patrick McHardy
+2010-04-01 %ipv4: remove redundant verification code% Hagen Paul Pfeifer
+2010-03-26 %ipv4: Restart rt_intern_hash after emergency rebuild (v2)% Pavel Emelyanov
+2010-03-26 %ipv4: Cleanup struct net dereference in rt_intern_hash% Pavel Emelyanov
+2010-03-25 %netfilter: ipv4: use NFPROTO values for NF_HOOK invocation% Jan Engelhardt
+2010-03-21 %ipv4: Don't drop redirected route cache entry unless PTMU actually expired% Guenter Roeck
+2010-03-19 %ipv4: check rt_genid in dst_check% Timo Teräs
+2010-03-19 %netfilter: remove unused headers in net/ipv4/netfilter/nf_nat_h323.c% Zhitong Wang
+2010-02-18 %netfilter: nf_defrag_ipv4: fix compilation error with NF_CONNTRACK=n% Patrick McHardy
+2010-02-16 %net ipv4: Decouple ipv4 interface parameters from binary sysctl numbers% Eric W. Biederman
+2010-02-04 %ipv4: obsolete config in kernel source (IP_ROUTE_PERVASIVE)% Christoph Egger
+2010-02-02 %ipv4: ip_fragment: fix unbalanced rcu_read_unlock()% Patrick McHardy
+2010-01-19 %ipv4: allow warming up the ARP cache with request type gratuitous ARP% Octavian Purdila
+2010-01-17 %ipv4: don't remove /proc/net/rt_acct% Alexey Dobriyan
+2010-01-15 %ipv4: Use less conflicting local var name in change_nexthops() loop macro.% David S. Miller
+2009-12-03 %ipv4 05/05: add sysctl to accept packets with local source addresses% Patrick McHardy
+2009-11-29 %ipv4: additional update of dev_net(dev) to struct *net in ip_fragment.c, NULL...% David Ford
+2009-11-23 %net/ipv4: Move &amp;&amp; and || to end of previous line% Joe Perches
+2009-11-18 %ipv4: factorize cache clearing for batched unregister operations% Octavian Purdila
+2009-11-13 %ipv4: speedup inet_dump_ifaddr()% Eric Dumazet
+2009-11-10 %IPV4: use rcu to walk list of devices in IGMP% stephen hemminger
+2009-11-08 %ipv4: udp: Optimise multicast reception% Eric Dumazet
+2009-11-08 %ipv4: udp: optimize unicast RX path% Eric Dumazet
+2009-11-04 %net: net/ipv4/devinet.c cleanups% Eric Dumazet
+2009-11-01 %ipv4: inetdev_by_index() switch to RCU% Eric Dumazet
+2009-10-07 %ipv4: Define cipso_v4_delopt static% Hagen Paul Pfeifer
+2009-10-07 %ipv4: arp_notify address list bug% Stephen Hemminger
+2009-10-05 %ipv4: fib table algorithm performance improvement% Stephen Hemminger
+2009-10-01 %net/ipv4/tcp.c: fix min() type mismatch warning% Andrew Morton
+2009-09-24 %ipv4: check optlen for IP_MULTICAST_IF option% Shan Wei
+2009-08-28 %ipv4: af_inet.c cleanups% Eric Dumazet
+2009-08-27 %ipv4: make ip_append_data() handle NULL routing table% Julien TINNES
+2009-07-30 %ipv4: ARP neigh procfs buffer overflow% roel kluin
+2009-07-20 %ipv4: fib_trie: Use tnode_get_child_rcu() and node_parent_rcu() in lookups% Jarek Poplawski
+2009-07-20 %ipv4: Fix inflate_threshold_root automatically% Jarek Poplawski
+2009-07-20 %ipv4: Use synchronize_rcu() during trie_rebalance()% Jarek Poplawski
+2009-07-08 %ipv4: Fix fib_trie rebalancing, part 4 (root thresholds)% Jarek Poplawski
+2009-06-30 %Revert "ipv4: arp announce, arp_proxy and windows ip conflict verification"% Eric W. Biederman
+2009-06-30 %ipv4: Fix fib_trie rebalancing, part 3% Jarek Poplawski
+2009-06-23 %ipv4 routing: Ensure that route cache entries are usable and reclaimable with...% Neil Horman
+2009-06-20 %ipv4: fix NULL pointer + success return in route lookup path% Neil Horman
+2009-06-18 %ipv4: Fix fib_trie rebalancing, part 2% Jarek Poplawski
+2009-06-15 %ipv4: Fix fib_trie rebalancing% Jarek Poplawski
+2009-06-13 %ipv4: update ARPD help text% Timo Teräs
+2009-06-09 %ipv4: Use frag list abstraction interfaces.% David S. Miller
+2009-06-03 %ipv4: remove ip_mc_drop_socket() declaration from af_inet.c.% Rami Rosen
+2009-06-02 %ipv4: New multicast-all socket option% Nivedita Singhvi
+2009-06-02 %net: ipv4/ip_sockglue.c cleanups% Eric Dumazet
+2009-05-27 %ipv4: Use 32-bit loads for ID and length in GRO% Herbert Xu
+2009-05-21 %ipv4: Fix oops with FIB_TRIE% Robert Olsson
+2009-05-20 %net: fix rtable leak in net/ipv4/route.c% Eric Dumazet
+2009-05-19 %ipv4: teach ipconfig about the MTU option in DHCP% Chris Friesen
+2009-05-18 %ipv4: make default for INET_LRO consistent with help text% Frans Pop
+2009-05-18 %ipv4: cleanup: remove unnecessary include.% Rami Rosen
+2009-05-18 %ipv4: cleanup - remove two unused parameters from fib_semantic_match().% Rami Rosen
+2009-05-17 %ipv4: remove an unused parameter from configure method of fib_rules_ops.% Rami Rosen
+2009-05-08 %ipv4: Make INET_LRO a bool instead of tristate.% David S. Miller
+2009-04-27 %ipv4: Limit size of route cache hash table% Anton Blanchard
+2009-03-31 %ipv4: remove unused parameter from tcp_recv_urg().% Rami Rosen
+2009-03-13 %ipv4: arp announce, arp_proxy and windows ip conflict verification% Denys Fedoryshchenko
+2009-02-22 %ipv4: Clean whitespaces in net/ipv4/Kconfig.% Jesper Dangaard Brouer
+2009-02-22 %ipv4: Fix rp_filter description in net/ipv4/Kconfig.% Jesper Dangaard Brouer
+2009-02-01 %ipv4: Delete redundant sk_family assignment% Herbert Xu
+2009-01-29 %ipv4: fix infinite retry loop in IP-Config% Benjamin Zores
+2009-01-22 %netns: ipmr: enable namespace support in ipv4 multicast routing code% Benjamin Thery
+2008-12-15 %ipv4: Add GRO infrastructure% Herbert Xu
+2008-11-16 %ipv4: Fix ARP behavior with many mac-vlans% Ben Greear
+2008-11-03 %net: clean up net/ipv4/tcp_ipv4.c% Jianjun Kong
+2008-11-03 %net: clean up net/ipv4/devinet.c% Jianjun Kong
+2008-11-03 %net: clean up net/ipv4/pararp.c% Jianjun Kong
+2008-11-03 %net: clean up net/ipv4/ip_fragment.c tcp_timer.c ip_input.c% Jianjun Kong
+2008-11-03 %net: clean up net/ipv4/ipmr.c% Jianjun Kong
+2008-11-03 %net: clean up net/ipv4/ip_sockglue.c tcp_output.c% Jianjun Kong
+2008-11-03 %net: clean up net/ipv4/igmp.c% Jianjun Kong
+2008-11-03 %net: clean up net/ipv4/fib_frontend.c fib_hash.c ip_gre.c% Jianjun Kong
+2008-11-03 %net: clean up net/ipv4/ipip.c raw.c tcp.c tcp_minisocks.c tcp_yeah.c xfrm4_po...% Jianjun Kong
+2008-11-03 %net: clean up net/ipv4/ah4.c esp4.c fib_semantics.c inet_connection_sock.c in...% Jianjun Kong
+2008-10-31 %net: replace NIPQUAD() in net/ipv4/ net/ipv6/% Harvey Harrison
+2008-10-31 %net: replace NIPQUAD() in net/ipv4/netfilter/% Harvey Harrison
+2008-10-16 %ipv4: Add a missing rcu_assign_pointer() in routing cache.% Eric Dumazet
+2008-10-07 %ipv4: add mc_count to in_device.% Rami Rosen
+2008-10-01 %ipv4: Make Netfilter's ip_route_me_harder() non-local address compatible% KOVACS Krisztian
+2008-10-01 %ipv4: Make inet_sock.h independent of route.h% KOVACS Krisztian
+2008-10-01 %ipv4: Allow binding to non-local addresses if IP_TRANSPARENT is set% Tóth László Attila
+2008-10-01 %ipv4: Implement IP_TRANSPARENT socket option% KOVACS Krisztian
+2008-10-01 %ipv4: Loosen source address check on IPv4 output% Julian Anastasov
+2008-08-27 %ipv4: mode 0555 in ipv4_skeleton% Hugh Dickins
+2008-08-25 %ipv4: sysctl fixes% Al Viro
+2008-08-18 %nf_nat: use secure_ipv4_port_ephemeral() for NAT port randomization% Stephen Hemminger
+2008-08-15 %ipv4: Disable route secret interval on zero interval% Herbert Xu
+2008-08-06 %ipv4: Fix over-ifdeffing of ip_static_sysctl_init.% David S. Miller
+2008-08-06 %ipv4: replace dst_metric() with dst_mtu() in net/ipv4/route.c.% Rami Rosen
+2008-08-01 %[PATCH] ipv4_static_sysctl_init() should be under CONFIG_SYSCTL% Al Viro
+2008-07-31 %net/ipv4/route.c: fix build error% Ingo Molnar
+2008-07-26 %[PATCH] sysctl: make sure that /proc/sys/net/ipv4 appears before per-ns ones% Al Viro
+2008-07-18 %ipv4: clean the init_ipv4_mibs error paths% Pavel Emelyanov
+2008-07-18 %ipv4: add pernet mib operations% Pavel Emelyanov
+2008-07-16 %ipv4: prepare net initialization for IP accounting% Pavel Emelyanov
+2008-07-16 %net/ipv4/tcp.c: Fix use of PULLHUP instead of POLLHUP in comments.% Will Newton
+2008-07-14 %ipv4: Fix ipmr unregister device oops% Wang Chen
+2008-07-14 %ipv4: Check return of dev_set_allmulti% Wang Chen
+2008-07-10 %ipv4: fib_trie: Fix lookup error return% Ben Hutchings
+2008-07-08 %ipv4: remove flush_mutex from ipv4_sysctl_rtcache_flush% Denis V. Lunev
+2008-07-05 %ipv4: pass current value of rt_genid into rt_hash% Denis V. Lunev
+2008-07-05 %netns: register net.ipv4.route.flush in each namespace% Denis V. Lunev
+2008-07-05 %ipv4: remove static flush_delay variable% Denis V. Lunev
+2008-07-03 %tcp: net/ipv4/tcp.c needs linux/scatterlist.h% Andrew Morton
+2008-07-03 %ipv4: Do cleanup for ip_mr_init% Wang Chen
+2008-06-17 %xfrm: fix fragmentation for ipv4 xfrm tunnel% Steffen Klassert
+2008-06-16 %ipv4: Remove unused definitions in net/ipv4/tcp_ipv4.c.% Rami Rosen
+2008-06-10 %ipv4 addr: Send netlink notification for address label changes% Thomas Graf
+2008-06-05 %[IPV4] TUNNEL4: Fix incoming packet length check for inter-protocol tunnel.% YOSHIFUJI Hideaki
+2008-05-21 %net/ipv4/arp.c: Use common hex_asc helpers% Denis Cheng
+2008-05-08 %net/ipv4: correct RFC 1122 section reference in comment% J.H.M. Dassen (Ray)
+2008-05-02 %ipv4: assign PDE-&gt;data before gluing PDE into /proc tree% Denis V. Lunev
+2008-04-29 %ipv4: annotate a few functions __init in ipconfig.c% Sam Ravnborg
+2008-04-29 %ipv4: Update MTU to all related cache entries in ip_rt_frag_needed()% Timo Teras
+2008-04-27 %ipv4/ipv6 compat: Fix SSM applications on 64bit kernels.% David L Stevens
+2008-04-21 %[IPV4]: Convert do_gettimeofday() to getnstimeofday().% YOSHIFUJI Hideaki
+2008-04-21 %[IPV4]: Make icmp_sk_init() static.% Adrian Bunk
+2008-04-21 %tcp: Trivial fix to correct function name in a comment in net/ipv4/tcp.c% Satoru SATOH
+2008-04-14 %[IPV4]: Use NIPQUAD_FMT to format ipv4 addresses.% YOSHIFUJI Hideaki
+2008-04-10 %IPV4: use xor rather than multiple ands for route compare% Stephen Hemminger
+2008-04-10 %ipv4: fib_trie leaf free optimization% Stephen Hemminger
+2008-04-10 %ipv4: fib_trie remove unused argument% Stephen Hemminger
+2008-04-10 %IPV4: fib_trie use vmalloc for large tnodes% Stephen Hemminger
+2008-04-10 %IPV4: route rekey timer can be deferrable% Stephen Hemminger
+2008-04-10 %IPV4: route use jhash3% Stephen Hemminger
+2008-04-10 %IPV4: route inline changes% Stephen Hemminger
+2008-04-10 %[IPV4]: Fix byte value boundary check in do_ip_getsockopt().% David S. Miller
+2008-03-31 %[IPV4][NETNS]: Display per-net info in sockstat file.% Pavel Emelyanov
+2008-03-26 %[NETNS][ICMP]: Use per-net sysctls in ipv4/icmp.c.% Pavel Emelyanov
+2008-03-25 %[IPV4,IPV6]: Share cork.rt between IPv4 and IPv6.% YOSHIFUJI Hideaki
+2008-03-22 %[IPV4] fib_trie: fix warning from rcu_assign_poinger% Stephen Hemminger
+2008-03-22 %[IPV4] route: use read_mostly% Stephen Hemminger
+2008-03-22 %[IPV4]: sk parameter is unused in ipv4_dst_blackhole.% Denis V. Lunev
+2008-03-22 %[IPV4]: Always pass ip_options pointer into ip_options_compile.% Denis V. Lunev
+2008-03-22 %[IPV4]: Remove unused ip_options-&gt;is_data.% Denis V. Lunev
+2008-03-22 %[IPV4]: Remove unnecessary check for opt-&gt;is_data in ip_options_compile.% Denis V. Lunev
+2008-03-21 %[IPV4]: Fix null dereference in ip_defrag% Phil Oester
+2008-03-21 %[NETNS][IPV4] tcp - make proc handle the network namespaces% Daniel Lezcano
+2008-03-17 %[IPV4]: esp_output() misannotations% Al Viro
+2008-03-05 %[IPV4]: Add 'rtable' field in struct sk_buff to alias 'dst' and avoid casts% Eric Dumazet
+2008-03-04 %[IPV4] UDP: Move IPv4-specific bits to other file.% YOSHIFUJI Hideaki
+2008-03-03 %[IPV4]: skb-&gt;dst can't be NULL in ip_options_echo.% Denis V. Lunev
+2008-02-28 %[IPV4]: rt_cache_get_next should take rt_genid into account.% Denis V. Lunev
+2008-02-28 %[IPV4]: Use proc_create() to setup -&gt;proc_fops first% Wang Chen
+2008-02-26 %[IPV4]: Reset scope when changing address% Bjorn Mork
+2008-02-19 %ipv4/fib_hash.c: fix NULL dereference% Adrian Bunk
+2008-02-17 %[IPV4]: fix alignment of IP-Config output% Uwe Kleine-Koenig
+2008-02-12 %[IPV4]: Remove IP_TOS setting privilege checks.% David S. Miller
+2008-02-07 %[IPV4]: route: fix crash ip_route_input% Patrick McHardy
+2008-02-05 %[IPV4]: Formatting fix for /proc/net/fib_trie.% Denis V. Lunev
+2008-01-31 %[IPV4]: fib_sync_down rework.% Denis V. Lunev
+2008-01-31 %[IPV4]: Small style cleanup of the error path in rtm_to_ifaddr.% Denis V. Lunev
+2008-01-31 %[IPV4]: Fix memory leak on error path during FIB initialization.% Denis V. Lunev
+2008-01-31 %[IPV4]: Make struct ipv4_devconf static.% Adrian Bunk
+2008-01-31 %[IPV4] route cache: Introduce rt_genid for smooth cache invalidation% Eric Dumazet
+2008-01-31 %[IPV4] fib_trie: rescan if key is lost during dump% Stephen Hemminger
+2008-01-31 %[IPV4] fib_trie: apply fixes from fib_hash% Julian Anastasov
+2008-01-31 %[IPV4] fib: fix route replacement, fib_info is shared% Julian Anastasov
+2008-01-28 %[IPV4] fib_trie: remove unneeded NULL check% Stephen Hemminger
+2008-01-28 %[IPV4] fib_trie: More whitespace cleanup.% Stephen Hemminger
+2008-01-28 %[IPV4]: Consolidate fib_select_default.% Denis V. Lunev
+2008-01-28 %[IPV4] fib_trie: avoid rescan on dump% Stephen Hemminger
+2008-01-28 %[IPV4] fib_trie: avoid extra search on delete% Stephen Hemminger
+2008-01-28 %[IPV4] fib_trie: dump table in sorted order% Stephen Hemminger
+2008-01-28 %[IPV4] fib_trie: iterator recode% Stephen Hemminger
+2008-01-28 %[IPV4] fib_trie: dump message multiple part flag% Stephen Hemminger
+2008-01-28 %[IPV4] fib_trie: use hash list% Stephen Hemminger
+2008-01-28 %[IPV4] fib_trie: compute size when needed% Stephen Hemminger
+2008-01-28 %[IPV4] fib_trie: style cleanup% Stephen Hemminger
+2008-01-28 %[IPV4] fib_trie: put leaf nodes in a slab cache% Stephen Hemminger
+2008-01-28 %[NETNS][FRAGS]: Make the net.ipv4.ipfrag_timeout work in namespaces.% Pavel Emelyanov
+2008-01-28 %[IPV4] UDP,UDPLITE: Sparse: {__udp4_lib,udp,udplite}_err() are of void.% YOSHIFUJI Hideaki
+2008-01-28 %[IPV4]: ipmr sparse warnings% Stephen Hemminger
+2008-01-28 %[IPV4]: igmp sparse warnings% Stephen Hemminger
+2008-01-28 %[IPV4]: Enable use of 240/4 address space.% Jan Engelhardt
+2008-01-28 %[IPV4] FIB_HASH: Reduce memory needs and speedup lookups% Eric Dumazet
+2008-01-28 %[IPV4]: fib hash|trie initialization% Stephen Hemminger
+2008-01-28 %[IPV4] fib_trie: size and statistics% Stephen Hemminger
+2008-01-28 %[IPV4]: Remove extra argument from arp_ignore.% Denis V. Lunev
+2008-01-28 %[IPV4] fib_trie: removes a memset() call in tnode_new()% Eric Dumazet
+2008-01-28 %[IPV4] FIB: Include nexthop device indexes in fib_info hashfn.% David S. Miller
+2008-01-28 %[FIB]: Reduce text size of net/ipv4/fib_trie.o% Eric Dumazet
+2008-01-28 %[IPV4] fib_trie: Fix sparse warnings.% Stephen Hemminger
+2008-01-28 %[IPV4] fib_trie: Add statistics.% Stephen Hemminger
+2008-01-28 %[IPV4] FIB: printk related cleanups% Stephen Hemminger
+2008-01-28 %[IPV4] fib_trie: fib_insert_node cleanup% Stephen Hemminger
+2008-01-28 %[IPV4] fib_trie: Use %u for unsigned printfs.% Stephen Hemminger
+2008-01-28 %[IPV4] fib_trie: Get rid of unused revision element.% Stephen Hemminger
+2008-01-28 %[IPV4] fib_trie: Get rid of trie_init().% Stephen Hemminger
+2008-01-28 %[IPV4]: Unify access to the routing tables.% Denis V. Lunev
+2008-01-28 %[IPV4]: Check fib4_rules_init failure.% Denis V. Lunev
+2008-01-28 %[IPV4]: Remove unsupported DNAT (RTCF_NAT and RTCF_NAT) in IPV4% Rami Rosen
+2008-01-28 %[ICMP]: Avoid sparse warnings in net/ipv4/icmp.c% Eric Dumazet
+2008-01-28 %[IPV4] net/ipv4: Use ipv4_is_&lt;type&gt;% Joe Perches
+2008-01-28 %[IPV4]: Switch users of ipv4_devconf(_all) to use the pernet one% Pavel Emelyanov
+2008-01-28 %[IPV4]: Switch users of ipv4_devconf_dflt to use the pernet one% Pavel Emelyanov
+2008-01-28 %[IPV4]: Move the devinet pointers on the struct net% Pavel Emelyanov
+2008-01-28 %[IPV4]: Store the net pointer on devinet's ctl tables% Pavel Emelyanov
+2008-01-28 %[IPV4]: Pass the net pointer to the arp_req_set_proxy()% Pavel Emelyanov
+2008-01-28 %[IPV4]: Make __devinet_sysctl_register return an error% Pavel Emelyanov
+2008-01-28 %[UDP]: Move udp_stats_in6 into net/ipv4/udp.c% Herbert Xu
+2008-01-28 %[IPV4]: Thresholds in fib_trie.c are used as consts, so make them const.% Denis V. Lunev
+2008-01-28 %[IPV4]: Cleanup sysctl manipulations in devinet.c% Pavel Emelyanov
+2008-01-28 %[IPV4]: last default route is a fib table property% Denis V. Lunev
+2008-01-28 %[IPV4]: Unify assignment of fi to fib_result% Denis V. Lunev
+2008-01-28 %[IPV4]: no need pass pointer to a default into fib_detect_death% Denis V. Lunev
+2008-01-28 %[IPV4] net/ipv4/cipso_ipv4.c: use LIST_HEAD instead of LIST_HEAD_INIT% Denis Cheng
+2008-01-28 %[IPV4]: Move trie_local and trie_main into the proc iterator.% Eric W. Biederman
+2008-01-28 %[IPV4]: Remove ip_fib_local_table and ip_fib_main_table defines.% Eric W. Biederman
+2008-01-28 %[IPV4] ROUTE: Convert rt_hash_lock_init() macro into function% Pavel Emelyanov
+2008-01-28 %[IPV4] ROUTE: Clean up proc files creation.% Pavel Emelyanov
+2008-01-28 %[IPV4] ROUTE: Collect proc-related functions together% Pavel Emelyanov
+2008-01-28 %[INET]: Merge sys.net.ipv4.ip_forward and sys.net.ipv4.conf.all.forwarding% Pavel Emelyanov
+2008-01-28 %[IPV4]: Use ctl paths to register net/ipv4/ table% Pavel Emelyanov
+2008-01-28 %[IPV4]: Cleanup the sysctl_net_ipv4.c file% Pavel Emelyanov
+2008-01-28 %[IPV4]: Add inet_dev_addr_type()% Laszlo Attila Toth
+2008-01-28 %[IPV4]: Use ctl paths to register devinet sysctls% Pavel Emelyanov
+2008-01-28 %[IPV4]: Unify and cleanup calls to devinet_sysctl_register% Pavel Emelyanov
+2008-01-28 %[IPV4]: Cleanup the devinet_sysctl_register% Pavel Emelyanov
+2008-01-28 %[IPV4] fib_hash: kmalloc + memset conversion to kzalloc% Joonwoo Park
+2008-01-28 %[IPV4] fib_semantics: kmalloc + memset conversion to kzalloc% Joonwoo Park
+2008-01-28 %[PATCH] IPV4 : Move ip route cache flush (secret_rebuild) from softirq to wor...% Eric Dumazet
+2008-01-28 %[IPV4] ipconfig: Implement DHCP Class-identifier% Rainer Jochem
+2008-01-28 %[IPV4]: Add ip_local_out% Herbert Xu
+2007-10-10 %[IPV4]: Add ICMPMsgStats MIB (RFC 4293)% David L Stevens
+2007-10-10 %[IPV4] af_inet.c: use ARRAY_SIZE macro from kernel.h instead% Denis Cheng
+2007-10-10 %[IPV4/IPV6/DECNET]: Small cleanup for fib rules.% Denis V. Lunev
+2007-10-10 %[IPV4]: Convert rt_check_expire() from softirq processing to workqueue.% Eric Dumazet
+2007-10-10 %[IPV4] IPSEC: Omit redirect for tunnelled packet.% Masahide NAKAMURA
+2007-10-10 %[IPV4] fib_trie: macro cleanup% Stephen Hemminger
+2007-10-10 %[IPV4] fib_trie: cleanup% Stephen Hemminger
+2007-09-14 %[IPV4]: Just increment OutDatagrams once per a datagram.% YOSHIFUJI Hideaki
+2007-09-11 %[NETFILTER]: nf_conntrack_ipv4: fix "Frag of proto ..." messages% Patrick McHardy
+2007-09-11 %[IPV4] devinet: show all addresses assigned to interface% Stephen Hemminger
+2007-08-13 %[IPV4]: Clean up duplicate includes in net/ipv4/% Jesper Juhl
+2007-08-02 %[IPV4] route.c: mostly kmalloc + memset conversion to k[cz]alloc% Mariusz Kozlowski
+2007-08-02 %[IPV4] raw.c: kmalloc + memset conversion to kzalloc% Mariusz Kozlowski
+2007-08-02 %[NETFILTER] nf_conntrack_l3proto_ipv4_compat.c: kmalloc + memset conversion t...% Mariusz Kozlowski
+2007-07-31 %[IPV4] ip_options.c: kmalloc + memset conversion to kzalloc% Mariusz Kozlowski
+2007-07-31 %[IPV4/IPV6]: Fail registration if inet device construction fails% Herbert Xu
+2007-07-20 %[IPV4]: Fix inetpeer gcc-4.2 warnings% Patrick McHardy
+2007-07-19 %[NET] IPV4: Fix whitespace errors.% YOSHIFUJI Hideaki
+2007-07-14 %[IPV4]: Cleanup call to __neigh_lookup()% Jean Delvare
+2007-07-14 %[INET_SOCK]: make net/ipv4/inet_timewait_sock.c:__inet_twsk_kill() static% Adrian Bunk
+2007-07-10 %[IPV4]: Make ip_tos2prio const.% Philippe De Muyter
+2007-07-10 %[NETFILTER] net/ipv4/netfilter/ip_tables.c: lower printk severity% Dan Aloni
+2007-07-10 %[IPV4]: The scheduled removal of multipath cached routing support.% David S. Miller
+2007-06-08 %[IPV4]: Do not remove idev when addresses are cleared% Herbert Xu
+2007-06-07 %[IPV4]: Restore old behaviour of default config values% Herbert Xu
+2007-06-07 %[IPV4]: Add default config support after inetdev_init% Herbert Xu
+2007-06-07 %[IPV4]: Convert IPv4 devconf to an array% Herbert Xu
+2007-06-07 %[IPV4]: Only panic if inetdev_init fails for loopback% Herbert Xu
+2007-06-03 %[IPV4]: Fix "ipOutNoRoutes" counter error for TCP and UDP% Wei Dong
+2007-05-31 %[IPV4]: Kill references to bogus non-existent CONFIG_IP_NOSIOCRT% David S. Miller
+2007-05-19 %[IPV4]: icmp: fix crash with sysctl_icmp_errors_use_inbound_ifaddr% Patrick McHardy
+2007-05-19 %[NETFILTER]: nf_conntrack_ipv4: fix incorrect #ifdef config name% Patrick McHardy
+2007-05-18 %[IPV4]: Remove IPVS icmp hack from route.c for now.% David S. Miller
+2007-05-17 %[IPV4]: Correct rp_filter help text.% Dave Jones
+2007-05-14 %[IPV4] SNMP: Display new statistics at /proc/net/netstat% Mitsuru Chinen
+2007-05-03 %[TCP]: Delete unused header file net/ipv4/tcp_yeah.h.% Robert P. J. Day
+2007-04-30 %[IPV4] UDP: Fix endianness bugs in hashing changes.% David S. Miller
+2007-04-30 %[IPV4] SNMP: Support OutMcastPkts and OutBcastPkts% Mitsuru Chinen
+2007-04-30 %[IPV4] SNMP: Support InMcastPkts and InBcastPkts% Mitsuru Chinen
+2007-04-30 %[IPV4] SNMP: Support InTruncatedPkts% Mitsuru Chinen
+2007-04-30 %[IPV4] SNMP: Support InNoRoutes% Mitsuru Chinen
+2007-04-30 %[PATCH] INET : IPV4 UDP lookups converted to a 2 pass algo% Eric Dumazet
+2007-04-27 %[IPV4] nl_fib_lookup: Initialise res.r before fib_res_put(&amp;res)% Sergey Vlasov
+2007-04-25 %[IPV4] IP_GRE: Unify code path to get hash array index.% YOSHIFUJI Hideaki
+2007-04-25 %[IPV4] IPIP: Unify code path to get hash array index.% YOSHIFUJI Hideaki
+2007-04-25 %[IPV4]: Consolidate common SNMP code% Herbert Xu
+2007-04-25 %[IPV4]: Fix build without procfs.% YOSHIFUJI Hideaki
+2007-04-25 %[IPV4] SNMP: Move some statistic bits to net/ipv4/proc.c.% YOSHIFUJI Hideaki
+2007-04-25 %[IPV4]: align inet_protos[] on SMP% Eric Dumazet
+2007-04-25 %[IPV4] LVS: Allow to send ICMP unreachable responses when real-servers are re...% Janusz Krzysztofik
+2007-04-25 %[IPV4]: fib_trie root node settings% Robert Olsson
+2007-04-25 %[IPV4]: fib_trie resize break% Robert Olsson
+2007-04-25 %[IPV4] xfrm4_mode_beet: Use skb_transport_header().% David S. Miller
+2007-04-25 %[IPV4]: cleanup% Stephen Hemminger
+2007-04-25 %[UDP]: ipv4 whitespace cleanup% Stephen Hemminger
+2007-04-25 %[NET] IPV4: Use hton{s,l}() where appropriate.% YOSHIFUJI Hideaki
+2007-04-25 %[IPV4]: Optimize inet_getpeer()% Eric Dumazet
+2007-03-26 %[IPV4] fib_trie: Document locking.% Robert Olsson
+2007-03-16 %[IPV4]: Do not disable preemption in trie_leaf_remove().% Robert Olsson
+2007-03-12 %[IPV4]: Fix warning in ip_mc_rejoin_group.% Geert Uytterhoeven
+2007-03-09 %[IPV4]: Fix rtm_to_ifaddr() error handling.% Evgeniy Polyakov
+2007-02-26 %[IPV4]: Use random32() in net/ipv4/multipath% Joe Perches
+2007-02-26 %[IPV4] devinet: Register inetdev earlier.% Herbert Xu
+2007-02-26 %[IPV4]: Correct links in net/ipv4/Kconfig% Baruch Even
+2007-02-10 %[IPV4]: Restore multipath routing after rt_next changes.% Eric Dumazet
+2007-02-10 %[IPV4]: Convert ipv4 route to use the new dst_entry 'next' pointer% Eric Dumazet
+2007-02-10 %[NET] IPV4: Fix whitespace errors.% YOSHIFUJI Hideaki
+2007-02-08 %[IPV4/IPV6] multicast: Check add_grhead() return value% Alexey Dobriyan
+2007-02-08 %[IPV4/IPV6]: Always wait for IPSEC SA resolution in socket contexts.% David S. Miller
+2007-01-26 %[IPV4]: Fix single-entry /proc/net/fib_trie output.% Robert Olsson
+2007-01-24 %[IPV4]: Fix the fib trie iterator to work with a single entry routing tables% Eric W. Biederman
+2007-01-09 %[IPV4] devinet: inetdev_init out label moved after RCU assignment% Jarek Poplawski
+2007-01-04 %[IPV4/IPV6]: Fix inet{,6} device initialization order.% David L Stevens
+2006-12-18 %[IPV4]: Fix BUG of ip_rt_send_redirect()% Li Yewang
+2006-12-12 %fix typo in net/ipv4/ip_fragment.c% Peter Zijlstra
+2006-12-06 %[IPSEC]: Fix inetpeer leak in ipv4 xfrm dst entries.% David S. Miller
+2006-12-02 %[CIPSO]: Missing annotation in cipso_ipv4 update.% Al Viro
+2006-12-02 %[IPV4]: Use kmemdup in net/ipv4/devinet.c% Arnaldo Carvalho de Melo
+2006-12-02 %[NETLABEL]: Use kmemdup in cipso_ipv4.c% Arnaldo Carvalho de Melo
+2006-12-02 %[TCP_IPV4]: Use kmemdup where appropriate% Arnaldo Carvalho de Melo
+2006-12-02 %[TCP_IPV4]: CodingStyle cleanups, no code change% Arnaldo Carvalho de Melo
+2006-12-02 %[IPV4] nl_fib_lookup: Rename fl_fwmark to fl_mark% Thomas Graf
+2006-12-02 %[IPV4]: encapsulation annotations% Al Viro
+2006-10-24 %[IPV4] ipconfig: fix RARP ic_servaddr breakage% Al Viro
+2006-09-28 %[IPV4]: inet_diag annotations% Al Viro
+2006-09-28 %[IPV4]: inet_rcv_saddr() annotations% Al Viro
+2006-09-28 %[IPV4]: struct inet_timewait_sock annotations% Al Viro
+2006-09-28 %[IPV4]: annotate inet_lookup() and friends% Al Viro
+2006-09-28 %[IPV4]: INET_MATCH() annotations% Al Viro
+2006-09-28 %[IPV4]: FRA_{DST,SRC} annotated% Al Viro
+2006-09-28 %[IPV4]: net/ipv4/fib annotations% Al Viro
+2006-09-28 %[IPV4]: mroute annotations% Al Viro
+2006-09-28 %[TCP] net/ipv4/tcp_output.c: trivial annotations% Al Viro
+2006-09-28 %[IPV4] net/ipv4/icmp.c: trivial annotations% Al Viro
+2006-09-28 %[UDP] net/ipv4/udp.c: trivial annotations% Al Viro
+2006-09-28 %[IPV4]: inet_csk_search_req() annotations% Al Viro
+2006-09-28 %[IPV4] net/ipv4/arp.c: trivial annotations% Al Viro
+2006-09-28 %[TCP] net/ipv4/tcp_input.c: trivial annotations% Al Viro
+2006-09-28 %[IPV4]: ip_icmp_error() annotations% Al Viro
+2006-09-28 %[IPV4]: ip_local_error() annotations% Al Viro
+2006-09-28 %[IPV4]: trivial igmp annotations% Al Viro
+2006-09-28 %[IPV4]: ip_mc_sf_allow() annotated% Al Viro
+2006-09-28 %[IPV4]: struct ip_sf_list and struct ip_sf_socklist annotated% Al Viro
+2006-09-28 %[IPV4]: ip_mc_{inc,dec}_group() annotations% Al Viro
+2006-09-28 %[IPV4]: ip_local_error() ipv4 address argument annotated% Al Viro
+2006-09-28 %[IPV4]: trivial ip_options.c annotations% Al Viro
+2006-09-28 %[IPV4]: struct ipcm_cookie annotation% Al Viro
+2006-09-28 %[IPV4]: struct ip_options annotations% Al Viro
+2006-09-28 %[IPV4]: inet_csk_search_req() (partial) annotations% Al Viro
+2006-09-28 %[IPV4]: annotate address in inet_request_sock% Al Viro
+2006-09-28 %[IPV4]: Fix order in inet_init failure path.% Olaf Kirch
+2006-09-28 %[IPV4]: ip_build_and_send_pkt() annotations% Al Viro
+2006-09-28 %[IPV4]: ip_options_build() annotations% Al Viro
+2006-09-28 %[IPV4] bug: broken open-coded inet_make_mask() (multipath_wrandom)% Al Viro
+2006-09-28 %[IPV4] multipath_wrandom.c: trivial annotations% Al Viro
+2006-09-28 %[IPV4]: multipath_set_nhinfo() annotations% Al Viro
+2006-09-28 %[IPV4] fib_trie.c: trivial annotations% Al Viro
+2006-09-28 %[IPV4] bug: open-coded inet_make_mask() in fib_semantic_match() is broken% Al Viro
+2006-09-28 %[IPV4]: fib_semantic_match() annotations% Al Viro
+2006-09-28 %[IPV4]: trivial fib_hash.c annotations% Al Viro
+2006-09-28 %[IPV4]: ip_fragment.c endianness annotations% Al Viro
+2006-09-28 %[IPV4]: inetpeer annotations% Al Viro
+2006-09-28 %[IPV4]: ip_fib_check_default() annotated% Al Viro
+2006-09-28 %[IPV4]: inet_addr_type() annotations% Al Viro
+2006-09-28 %[IPV4]: icmp_send() annotation% Al Viro
+2006-09-28 %[IPV4]: annotate inetdev.h helpers% Al Viro
+2006-09-28 %[IPV4]: IFA_{LOCAL,ADDRESS,BROADCAST,ANYCAST} on ipv4 annotated% Al Viro
+2006-09-28 %[IPV4]: annotate struct in_ifaddr% Al Viro
+2006-09-28 %[IPV4]: struct fib_config IPv4 address fields annotated% Al Viro
+2006-09-28 %[IPV4]: RTA_{DST,SRC,GATEWAY,PREFSRC} annotated% Al Viro
+2006-09-28 %[IPV4] net/ipv4/route.c: trivial endianness annotations% Al Viro
+2006-09-28 %[IPV4]: FIB_RES_PREFSRC() annotated% Al Viro
+2006-09-28 %[IPV4]: inet_addr_onlink() annotated% Al Viro
+2006-09-28 %[IPV4]: ip_check_mc() annotations% Al Viro
+2006-09-28 %[IPV4]: fib_validate_source() annotations% Al Viro
+2006-09-28 %[IPV4]: inet_select_addr() annotations% Al Viro
+2006-09-28 %[IPV4]: ip_route_connect() ipv4 address arguments annotated% Al Viro
+2006-09-28 %[IPV4]: annotate rt_hash_code() users% Al Viro
+2006-09-28 %[IPV4]: ip_rt_redirect() annotations% Al Viro
+2006-09-28 %[IPV4]: ip_route_input() annotations% Al Viro
+2006-09-22 %[IPV4]: ipip and ip_gre encapsulation bugs% Al Viro
+2006-09-22 %[IPV4]: Add support for fwmark masks in routing rules% Patrick McHardy
+2006-09-22 %[NET/IPV4/IPV6]: Change some sysctl variables to __read_mostly% Brian Haley
+2006-09-22 %[IPV4]: add the UdpSndbufErrors and UdpRcvbufErrors MIBs% Martin Bligh
+2006-09-22 %[IPV4]: Increase number of possible routing tables to 2^32% Patrick McHardy
+2006-09-22 %[IPV4]: Use network-order dport for all visible inet_lookup_*% Herbert Xu
+2006-09-22 %[IPV4] fib: convert reader/writer to spinlock% Stephen Hemminger
+2006-09-22 %[IPV4]: Uninline inet_lookup_listener% Herbert Xu
+2006-09-22 %[IPV4]: Kill fib4_rules_clean().% David S. Miller
+2006-09-22 %[IPV4]: Convert address dumping to new netlink api% Thomas Graf
+2006-09-22 %[IPV4]: Convert address deletion to new netlink api% Thomas Graf
+2006-09-22 %[IPV4]: Convert address addition to new netlink api% Thomas Graf
+2006-09-22 %[IPV4]: Use Protocol Independant Policy Routing Rules Framework% Thomas Graf
+2006-09-19 %[IPV4] fib_trie: missing ntohl() when calling fib_semantic_match()% Al Viro
+2006-08-31 %[IPV4]: Fix SNMPv2 "ipFragFails" counter error% Wei Dong
+2006-08-17 %[IPV4]: severe locking bug in fib_semantics.c% Alexey Kuznetsov
+2006-08-17 %[IPV4]: Possible leak of multicast source filter sctructure% Michal Ruzicka
+2006-08-07 %[IPV4]: Limit rt cache size properly.% Kirill Korotaev
+2006-08-02 %[TCP]: fix memory leak in net/ipv4/tcp_probe.c::tcpprobe_read()% James Morris
+2006-07-25 %[IPV4/IPV6]: Setting 0 for unused port field in RAW IP recvmsg().% Tetsuo Handa
+2006-07-25 %[IPV4] ipmr: ip multicast route bug fix.% Alexey Kuznetsov
+2006-07-24 %[IPV4]: Clear the whole IPCB, this clears also IPCB(skb)-&gt;flags.% Guillaume Chazarain
+2006-07-21 %[IPV4]: Fix nexthop realm dumping for multipath routes% Patrick McHardy
+2006-07-21 %[IPV4]: Get rid of redundant IPCB-&gt;opts initialisation% Herbert Xu
+2006-07-14 %[IPV4]: Clear skb cb on IP input% Stephen Hemminger
+2006-07-12 %[IPV4]: Fix error handling for fib_insert_node call% Herbert Xu
+2006-07-10 %[IPV4] inetpeer: Get rid of volatile from peer_total% Herbert Xu
+2006-06-29 %[NETFILTE] ipv4: Fix typo (Bugzilla #6753)% Matt LaPlante
+2006-06-17 %[NET]: net.ipv4.ip_autoconfig sysctl removal% Stephen Hemminger
+2006-06-17 %[IPV4] icmp: Kill local 'ip' arg in icmp_redirect().% David S. Miller
+2006-06-17 %[IPV4]: Right prototype of __raw_v4_lookup()% Alexey Dobriyan
+2006-06-17 %[IPV4] igmp: Fixup struct ip_mc_list::multiaddr type% Alexey Dobriyan
+2006-06-12 %[IPV4]: Increment ipInHdrErrors when TTL expires.% Weidong
+2006-05-09 %[IPV4]: ip_options_fragment() has no effect on fragmentation% Wei Yongjun
+2006-05-06 %[IPV4]: Remove likely in ip_rcv_finish()% Hua Zhong
+2006-04-29 %[IPV4]: inet_init() -&gt; fs_initcall% Heiko Carstens
+2006-04-17 %[IPV4]: ip_route_input panic fix% Stephen Hemminger
+2006-04-14 %[IPV4]: Possible cleanups.% Adrian Bunk
+2006-04-09 %[IPV4] ip_fragment: Always compute hash with ipfrag_lock held.% David S. Miller
+2006-03-25 %[IPV4]: Aggregate route entries with different TOS values% Ilia Sotnikov
+2006-03-23 %[IPV4]: Add fib rule netlink notifications% Patrick McHardy
+2006-03-20 %[IPV4] ARP: Alloc acceptance of unsolicited ARP via netdevice sysctl.% Neil Horman
+2006-03-20 %[IPV4]: fib_trie stats fix% Robert Olsson
+2006-03-20 %[IPV4]: fib_trie initialzation fix% Robert Olsson
+2006-03-20 %[IPV4] fib_rules.c: make struct fib_rules static again% Adrian Bunk
+2006-03-20 %[IPV4]: Use RCU locking in fib_rules.% Robert Olsson
+2006-03-12 %[IPV4/6]: Fix UFO error propagation% Patrick McHardy
+2006-02-23 %[IPV4]: Fix garbage collection of multipath route entries% Suresh Bhogavilli
+2006-02-13 %[IPV4] ICMP: Invert default for invalid icmp msgs sysctl% Dave Jones
+2006-02-07 %[PATCH] ipv4 NULL noise removal% Al Viro
+2006-02-02 %[IPV4]: Remove suprious use of goto out: in icmp_reply% Horms
+2006-02-02 %[IPV4] multipath_wrandom: Fix softirq-unsafe spin lock usage% Herbert Xu
+2006-01-31 %[IPV4]: Always set fl.proto in ip_route_newports% Patrick McHardy
+2006-01-31 %Fix ipv4/igmp.c compile with gcc-4 and IP_MULTICAST% Linus Torvalds
+2006-01-30 %[IPV4] igmp: remove pointless printk% Dave Jones
+2006-01-18 %[IPV4]: Fix multiple bugs in IGMPv3% David L Stevens
+2006-01-17 %[IPV4]: RT_CACHE_STAT_INC() warning fix% Andrew Morton
+2006-01-17 %[IPV4]: rt_cache_stat can be statically defined% Eric Dumazet
+2006-01-09 %[IPV4]: ip_output.c needs xfrm.h% Patrick McHardy
+2006-01-09 %[NET]: Convert net/{ipv4,ipv6,sched} to netdev_priv% Patrick McHardy
+2006-01-07 %[IPV4]: make ip_fragment() static% Adrian Bunk
+2006-01-07 %[IPV4]: reset IPCB flags when neccessary% Patrick McHardy
+2006-01-07 %[IPV4/6]: Netfilter IPsec input hooks% Patrick McHardy
+2006-01-05 %[NETFILTER]: nf_conntrack_l3proto_ipv4.c needs net/route.h% Patrick McHardy
+2006-01-03 %[IPV4] fib_trie: build fix% Stephen Hemminger
+2006-01-03 %[IPV4] fib_trie: Add credits.% Robert Olsson
+2006-01-03 %[IPV4]: Safer reassembly% Herbert Xu
+2005-12-02 %[IPV4] Fix EPROTONOSUPPORT error in inet_create% Herbert Xu
+2005-11-29 %[NETFILTER] ipv4: small cleanups% Adrian Bunk
+2005-11-29 %[IPV4]: make two functions static% Adrian Bunk
+2005-11-29 %[IPV4] tcp/route: Another look at hash table sizes% Mike Stroyan
+2005-11-22 %[IPV4]: Fix secondary IP addresses after promotion% Jamal Hadi Salim
+2005-11-16 %[IPV4,IPV6]: replace handmade list with hlist in IPv{4,6} reassembly% Yasuyuki Kozakai
+2005-11-08 %[IPV4]: Fix ip_queue_xmit identity increment for TSO packets% Herbert Xu
+2005-10-29 %[IPV4]: Fix issue reported by Coverity in ipv4/fib_frontend.c% Jayachandran C
+2005-10-26 %[IPV4]: Fix setting broadcast for SIOCSIFNETMASK% David Engel
+2005-10-26 %[IPV4]: Remove dead code from ip_output.c% Jayachandran C
+2005-10-26 %[IPV4]: Kill redundant rcu_dereference on fa_info% Herbert Xu
+2005-10-12 %[TCP]: Add code to help track down "BUG at net/ipv4/tcp_output.c:438!"% Herbert Xu
+2005-10-04 %[IPV4]: fib_trie root-node expansion% Robert Olsson
+2005-10-03 %[IPV4]: Update icmp sysctl docs and disable broadcast ECHO/TIMESTAMP by default% David S. Miller
+2005-10-03 %[IPV4]: Replace __in_dev_get with __in_dev_get_rcu/rtnl% Herbert Xu
+2005-10-03 %[IPV4]: Fix "Proxy ARP seems broken"% Herbert Xu
+2005-09-19 %[IPV4]: fib_trie RCU refinements% Robert Olsson
+2005-09-19 %[IPV4]: fib_trie tnode stats refinements% Robert Olsson
+2005-09-09 %[IPV4] fib_trie: fix proc interface% Stephen Hemminger
+2005-09-08 %[IPV4]: Fix refcount damaging in net/ipv4/route.c% Julian Anastasov
+2005-09-08 %[IPV4] udp: trim forgets about CHECKSUM_HW% Stephen Hemminger
+2005-09-06 %[IPV4]: Reassembly trim not clearing CHECKSUM_HW% Stephen Hemminger
+2005-09-05 %[IPV4]: net/ipv4/ipconfig.c should #include &lt;linux/nfs_fs.h&gt;% Adrian Bunk
+2005-08-29 %[IPV4]: Convert FIB Trie to RCU.% Robert Olsson
+2005-08-29 %[IPV4]: Prepare FIB core for RCU.% Robert Olsson
+2005-08-29 %[IPV4]: Module export of ip_rcv() no longer needed.% Ralf Baechle
+2005-08-29 %[IPV4]: FIB trie cleanup% Stephen Hemminger
+2005-08-29 %[IPV4]: ip_finish_output() can be inlined% Thomas Graf
+2005-08-29 %[IPV4]: Remove some dead code from ip_forward()% Thomas Graf
+2005-08-29 %[IPV4]: Avoid common branch mispredictions in ip_rcv_finish()% Thomas Graf
+2005-08-29 %[IPV4]: Move ip options parsing out of ip_rcv_finish()% Thomas Graf
+2005-08-29 %[IPV4]: Avoid common branch misprediction while checking csum in ip_rcv()% Thomas Graf
+2005-08-29 %[IPV4]: Consistency and whitespace cleanup of ip_rcv()% Thomas Graf
+2005-08-29 %[IPVS]: ipv4_table --&gt; ipvs_ipv4_table% David S. Miller
+2005-08-29 %[TIMEWAIT]: Move inet_timewait_death_row routines to net/ipv4/inet_timewait_s...% Arnaldo Carvalho de Melo
+2005-08-29 %[IPV4]: fib_trie: Use const% Stephen Hemmigner
+2005-08-29 %[IPV4]: fib_trie: Use ERR_PTR to handle errno return% Robert Olsson
+2005-08-29 %[IPV4]: FIB Trie cleanups.% Olof Johansson
+2005-08-29 %[IPV4/6]: Check if packet was actually delivered to a raw socket to decide wh...% Patrick McHardy
+2005-08-29 %[NETFILTER]: Move ipv4 specific code from net/core/netfilter.c to net/ipv4/ne...% Harald Welte
+2005-08-29 %[IPV4]: possible cleanups% Adrian Bunk
+2005-08-23 %[IPV4]: Fix negative timer loop with lots of ipv4 peers.% Dave Johnson
+2005-08-18 %[IPV4]: Fix DST leak in icmp_push_reply()% Patrick McHardy
+2005-08-16 %[TCP]: Fix bug #5070: kernel BUG at net/ipv4/tcp_output.c:864% Herbert Xu
+2005-08-08 %[IPV4]: Debug cleanup% Heikki Orsila
+2005-08-05 %[IPV4]: Fix memory leak during fib_info hash expansion.% David S. Miller
+2005-07-27 %[NET]: Move in_aton from net/ipv4/utils.c to net/core/utils.c% Matt Mackall
+2005-07-27 %[IPV4]: Fix Kconfig syntax error% Hans-Juergen Tappe (SYSGO AG)
+2005-07-19 %[IPV4]: Fix up lots of little whitespace indentation stuff in fib_trie.% Stephen Hemminger
+2005-07-19 %[IPV4]: Don't select XFRM for ip_gre% Patrick McHardy
+2005-07-18 %[IPV4]: fix IP_FIB_HASH kconfig warning% Adrian Bunk
+2005-07-11 %[IPV4]: Prevent oops when printing martian source% Olaf Kirch
+2005-07-08 %[IPV4]: fix IPv4 leave-group group matching% David L Stevens
+2005-07-08 %[IPV4]: (INCLUDE,empty)/leave-group equivalence for full-state MSF APIs &amp; err...% David L Stevens
+2005-07-08 %[IPV4]: multicast API "join" issues% David L Stevens
+2005-07-08 %[IPV4]: multicast API "join" issues% David L Stevens
+2005-07-08 %[IPV4]: multicast API "join" issues% David L Stevens
+2005-07-08 %[IPV4]: Apply sysctl_icmp_echo_ignore_broadcasts to ICMP_TIMESTAMP as well.% Alexey Kuznetsov
+2005-07-05 %[IPV4]: More broken memory allocation fixes for fib_trie% Robert Olsson
+2005-07-05 %[IPV4]: Bug fix in rt_check_expire()% Eric Dumazet
+2005-07-05 %[IPV4]: Use the fancy alloc_large_system_hash() function for route hash table% Eric Dumazet
+2005-07-05 %[NET]: Hashed spinlocks in net/ipv4/route.c% Eric Dumazet
+2005-07-05 %[IPV4]: Handle large allocations in fib_trie% Patrick McHardy
+2005-07-05 %[IPV4]: Fix crash in ip_rcv while booting related to netconsole% Herbert Xu
+2005-06-28 %[IPV4]: Broken memory allocation in fib_trie% Robert Olsson
+2005-06-28 %[IPV4]: ipconfig.c: fix dhcp timeout behaviour% Maxime Bizon
+2005-06-28 %[IPV4]: Snmpv2 Mib IP counter ipInAddrErrors support% Dietmar Eggemann
+2005-06-26 %[IPV4]: Fix thinko in TCP_CONG_BIC default.% David S. Miller
+2005-06-24 %[IPV4]: Move FIB lookup algorithm choice under IP_ADVANCED_ROUTING% David S. Miller
+2005-06-22 %[IPV4]: Fix route.c gcc4 warnings% Chuck Short
+2005-06-22 %[PATCH] Fix extra double quote in IPV4 Kconfig% Kumar Gala
+2005-06-21 %[IPV4]: Fix fib_trie.c's args to fib_dump_info().% David S. Miller
+2005-06-21 %[IPV4]: Add LC-Trie FIB lookup algorithm.% Robert Olsson
+2005-06-18 %[IPV4]: [4/4] signed vs unsigned cleanup in net/ipv4/raw.c% Jesper Juhl
+2005-06-18 %[IPV4]: [3/4] signed vs unsigned cleanup in net/ipv4/raw.c% Jesper Juhl
+2005-06-18 %[IPV4]: [2/4] signed vs unsigned cleanup in net/ipv4/raw.c% Jesper Juhl
+2005-06-18 %[IPV4]: [1/4] signed vs unsigned cleanup in net/ipv4/raw.c% Jesper Juhl
+2005-06-18 %[IPV4/IPV6]: Replace spin_lock_irq with spin_lock_bh% Herbert Xu
+2005-06-13 %[IPV4]: Sysctl configurable icmp error source address.% J. Simonetti
+2005-06-13 %[IPV4]: Multipath modules need a license to prevent kernel tainting.% Randy Dunlap
+2005-06-02 %[IPVS]: remove net/ipv4/ipvs/ip_vs_proto_icmp.c% Adrian Bunk
+2005-05-30 %[IPV4]: Fix BUG() in 2.6.x, udp_poll(), fragments + CONFIG_HIGHMEM% Herbert Xu
+2005-05-29 %[IPV4]: Kill MULTIPATHHOLDROUTE flag.% Pravin B. Shelar
+2005-05-29 %[IPV4]: Primary and secondary addresses% Harald Welte
+2005-05-18 %[IPV4/IPV6] Ensure all frag_list members have NULL sk% Herbert Xu
+2005-05-05 %[IPV4]: multipath_wrandom.c GPF fixes% Patrick McHardy
+2005-04-28 %[IPV4]: Incorrect permissions on route flush sysctl% Dave Jones
